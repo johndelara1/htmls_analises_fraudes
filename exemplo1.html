@@ -1,0 +1,2952 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d7e95c67f1e5e7b64355cb2e9f1e9a86 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="https://rawcdn.githack.com/nezasa/iso8601-js-period/master/iso8601.min.js"></script>
+    <script src="https://rawcdn.githack.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d7e95c67f1e5e7b64355cb2e9f1e9a86" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d7e95c67f1e5e7b64355cb2e9f1e9a86 = L.map(
+                "map_d7e95c67f1e5e7b64355cb2e9f1e9a86",
+                {
+                    center: [-22.9485, -43.3436],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a311fec2eb712f7d0ba0eb30f0e61ce3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d7e95c67f1e5e7b64355cb2e9f1e9a86);
+        
+    
+            var feature_group_2d383c03d5e73ed7728cc40a58585c2b = L.featureGroup(
+                {}
+            ).addTo(map_d7e95c67f1e5e7b64355cb2e9f1e9a86);
+        
+    
+            var poly_line_5b4badffae7f3c6652d1d67f187af4f3 = L.polyline(
+                [[-22.9485, -43.3436], [-23.6283, -46.6409]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_cd460a67c4415be7caa5d3daf0d26c6c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69f48b37e2f277c7fa3938d94e4fe126 = $(`<div id="html_69f48b37e2f277c7fa3938d94e4fe126" style="width: 100.0%; height: 100.0%;">Dispositivo: São Paulo, Distância: 345 km</div>`)[0];
+            popup_cd460a67c4415be7caa5d3daf0d26c6c.setContent(html_69f48b37e2f277c7fa3938d94e4fe126);
+        
+
+        poly_line_5b4badffae7f3c6652d1d67f187af4f3.bindPopup(popup_cd460a67c4415be7caa5d3daf0d26c6c)
+        ;
+
+        
+    
+    
+            var poly_line_b45a2573576189d42059ed9b05d2c514 = L.polyline(
+                [[-23.6283, -46.6409], [-22.9485, -43.3436]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_1b9b5fa8e74fcfca20785ec71e16d3bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8303dfe35c503da9b64269b13637c2bc = $(`<div id="html_8303dfe35c503da9b64269b13637c2bc" style="width: 100.0%; height: 100.0%;">Dispositivo: Rio de Janeiro, Distância: 345 km</div>`)[0];
+            popup_1b9b5fa8e74fcfca20785ec71e16d3bb.setContent(html_8303dfe35c503da9b64269b13637c2bc);
+        
+
+        poly_line_b45a2573576189d42059ed9b05d2c514.bindPopup(popup_1b9b5fa8e74fcfca20785ec71e16d3bb)
+        ;
+
+        
+    
+    
+            var poly_line_3d749c8e29821f8012d710f0a52fdb53 = L.polyline(
+                [[-22.9485, -43.3436], [-23.6283, -46.6409]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_388a1bad0911b73e54b1702da720079b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05ea9df475d2c55a4bd4ec5e921fe549 = $(`<div id="html_05ea9df475d2c55a4bd4ec5e921fe549" style="width: 100.0%; height: 100.0%;">Dispositivo: São Paulo, Distância: 345 km</div>`)[0];
+            popup_388a1bad0911b73e54b1702da720079b.setContent(html_05ea9df475d2c55a4bd4ec5e921fe549);
+        
+
+        poly_line_3d749c8e29821f8012d710f0a52fdb53.bindPopup(popup_388a1bad0911b73e54b1702da720079b)
+        ;
+
+        
+    
+    
+            var poly_line_b3af6f295d0a2be77341a51d3ea255fe = L.polyline(
+                [[-23.6283, -46.6409], [-22.9485, -43.3436]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_4c8e7e96e72711c98dad09da5cd08261 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_addb1193a45ed40814ccc3aee22d1c82 = $(`<div id="html_addb1193a45ed40814ccc3aee22d1c82" style="width: 100.0%; height: 100.0%;">Dispositivo: Rio de Janeiro, Distância: 345 km</div>`)[0];
+            popup_4c8e7e96e72711c98dad09da5cd08261.setContent(html_addb1193a45ed40814ccc3aee22d1c82);
+        
+
+        poly_line_b3af6f295d0a2be77341a51d3ea255fe.bindPopup(popup_4c8e7e96e72711c98dad09da5cd08261)
+        ;
+
+        
+    
+    
+            var poly_line_7e41a5d04ec6f7de748b5693b5927844 = L.polyline(
+                [[-22.9485, -43.3436], [45.4722, 9.1922]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_6d65857f51e0aae89e3d7ed39620512d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f799c380d46e137cbef4c978adcbf7f = $(`<div id="html_9f799c380d46e137cbef4c978adcbf7f" style="width: 100.0%; height: 100.0%;">Dispositivo: Milão, Distância: 9274 km</div>`)[0];
+            popup_6d65857f51e0aae89e3d7ed39620512d.setContent(html_9f799c380d46e137cbef4c978adcbf7f);
+        
+
+        poly_line_7e41a5d04ec6f7de748b5693b5927844.bindPopup(popup_6d65857f51e0aae89e3d7ed39620512d)
+        ;
+
+        
+    
+    
+            var poly_line_91dd4e7021ecfe7d50dff0218cdc00cd = L.polyline(
+                [[45.4722, 9.1922], [-23.6283, -46.6409]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_1fbcdbd6ff98dc203a750a379ba88c42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_819c8d92c5fc5ad501ab8b06dd25aad7 = $(`<div id="html_819c8d92c5fc5ad501ab8b06dd25aad7" style="width: 100.0%; height: 100.0%;">Dispositivo: São Paulo, Distância: 9528 km</div>`)[0];
+            popup_1fbcdbd6ff98dc203a750a379ba88c42.setContent(html_819c8d92c5fc5ad501ab8b06dd25aad7);
+        
+
+        poly_line_91dd4e7021ecfe7d50dff0218cdc00cd.bindPopup(popup_1fbcdbd6ff98dc203a750a379ba88c42)
+        ;
+
+        
+    
+    
+            var poly_line_85420c923bba408f89d2a530341570e7 = L.polyline(
+                [[-23.6283, -46.6409], [45.4722, 9.1922]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_c1feee8381173a135c99c8ccc321c146 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_420ee7b71406ede501c657de1c19afa3 = $(`<div id="html_420ee7b71406ede501c657de1c19afa3" style="width: 100.0%; height: 100.0%;">Dispositivo: Milão, Distância: 9528 km</div>`)[0];
+            popup_c1feee8381173a135c99c8ccc321c146.setContent(html_420ee7b71406ede501c657de1c19afa3);
+        
+
+        poly_line_85420c923bba408f89d2a530341570e7.bindPopup(popup_c1feee8381173a135c99c8ccc321c146)
+        ;
+
+        
+    
+    
+            var poly_line_1142d608e4832b889a3551b759724436 = L.polyline(
+                [[45.4722, 9.1922], [-23.6283, -46.6409]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_7036fadd7acc634ec4672a7d9eeddcc9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a6f054738e82f9d6f345637ac987095 = $(`<div id="html_5a6f054738e82f9d6f345637ac987095" style="width: 100.0%; height: 100.0%;">Dispositivo: São Paulo, Distância: 9528 km</div>`)[0];
+            popup_7036fadd7acc634ec4672a7d9eeddcc9.setContent(html_5a6f054738e82f9d6f345637ac987095);
+        
+
+        poly_line_1142d608e4832b889a3551b759724436.bindPopup(popup_7036fadd7acc634ec4672a7d9eeddcc9)
+        ;
+
+        
+    
+    
+            var poly_line_4dd0ad8058c7391909398c5ac6922c53 = L.polyline(
+                [[-23.6283, -46.6409], [45.4722, 9.1922]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_de616aef885b3f89e12dc0470d9ee4e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1bd0c5e8553aec7651dbff919b525c8e = $(`<div id="html_1bd0c5e8553aec7651dbff919b525c8e" style="width: 100.0%; height: 100.0%;">Dispositivo: Milão, Distância: 9528 km</div>`)[0];
+            popup_de616aef885b3f89e12dc0470d9ee4e0.setContent(html_1bd0c5e8553aec7651dbff919b525c8e);
+        
+
+        poly_line_4dd0ad8058c7391909398c5ac6922c53.bindPopup(popup_de616aef885b3f89e12dc0470d9ee4e0)
+        ;
+
+        
+    
+    
+            var poly_line_abb29a3bb013a1c9b1ffdec1b3dbd1d0 = L.polyline(
+                [[45.4722, 9.1922], [-9.4488, -36.3859]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_3bf25cd5f7a16239101622f997be0e4e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0965c187082f841f62f73d38524beab5 = $(`<div id="html_0965c187082f841f62f73d38524beab5" style="width: 100.0%; height: 100.0%;">Dispositivo: Mar Vermelho, Distância: 7612 km</div>`)[0];
+            popup_3bf25cd5f7a16239101622f997be0e4e.setContent(html_0965c187082f841f62f73d38524beab5);
+        
+
+        poly_line_abb29a3bb013a1c9b1ffdec1b3dbd1d0.bindPopup(popup_3bf25cd5f7a16239101622f997be0e4e)
+        ;
+
+        
+    
+    
+            var poly_line_81b40f21f0708c29f9bce3d5edd2e4be = L.polyline(
+                [[-9.4488, -36.3859], [-23.6283, -46.6409]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_474621be2cf026cce908ff04d716dee3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5cae8f1f7c931c01f0a8d18e6d97d469 = $(`<div id="html_5cae8f1f7c931c01f0a8d18e6d97d469" style="width: 100.0%; height: 100.0%;">Dispositivo: São Paulo, Distância: 1916 km</div>`)[0];
+            popup_474621be2cf026cce908ff04d716dee3.setContent(html_5cae8f1f7c931c01f0a8d18e6d97d469);
+        
+
+        poly_line_81b40f21f0708c29f9bce3d5edd2e4be.bindPopup(popup_474621be2cf026cce908ff04d716dee3)
+        ;
+
+        
+    
+    
+            var poly_line_5df8a73b1f7ea77e6cafc433e82f2dda = L.polyline(
+                [[-23.6283, -46.6409], [46.1394, 12.2213]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_a6cde9b95add1281c07ed43f0fcb3f2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b71cc9db4df6b8716d3a465687a411ca = $(`<div id="html_b71cc9db4df6b8716d3a465687a411ca" style="width: 100.0%; height: 100.0%;">Dispositivo: Belluno, Distância: 9757 km</div>`)[0];
+            popup_a6cde9b95add1281c07ed43f0fcb3f2c.setContent(html_b71cc9db4df6b8716d3a465687a411ca);
+        
+
+        poly_line_5df8a73b1f7ea77e6cafc433e82f2dda.bindPopup(popup_a6cde9b95add1281c07ed43f0fcb3f2c)
+        ;
+
+        
+    
+    
+            var poly_line_b4a52cc32f5e6779de0702b118d701fd = L.polyline(
+                [[46.1394, 12.2213], [-30.1169, -51.2658]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_3ab68b09499d51a3d3f5a2a8733c8141 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e58785c3ec3e5131c6c7250fd3eb2eca = $(`<div id="html_e58785c3ec3e5131c6c7250fd3eb2eca" style="width: 100.0%; height: 100.0%;">Dispositivo: Porto Alegre, Distância: 10608 km</div>`)[0];
+            popup_3ab68b09499d51a3d3f5a2a8733c8141.setContent(html_e58785c3ec3e5131c6c7250fd3eb2eca);
+        
+
+        poly_line_b4a52cc32f5e6779de0702b118d701fd.bindPopup(popup_3ab68b09499d51a3d3f5a2a8733c8141)
+        ;
+
+        
+    
+    
+            var poly_line_018c2ae62caf71917068f94e721a9433 = L.polyline(
+                [[-30.1169, -51.2658], [46.1394, 12.2213]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_bf1680adcddda7f9667c2226501ae5c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e2e5447b7d21fb2069f0ac46a741427 = $(`<div id="html_3e2e5447b7d21fb2069f0ac46a741427" style="width: 100.0%; height: 100.0%;">Dispositivo: Belluno, Distância: 10608 km</div>`)[0];
+            popup_bf1680adcddda7f9667c2226501ae5c6.setContent(html_3e2e5447b7d21fb2069f0ac46a741427);
+        
+
+        poly_line_018c2ae62caf71917068f94e721a9433.bindPopup(popup_bf1680adcddda7f9667c2226501ae5c6)
+        ;
+
+        
+    
+    
+            var poly_line_b3c2a044cde8781e046c04f139532652 = L.polyline(
+                [[46.1394, 12.2213], [-23.6283, -46.6409]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_0c9df0bfa9ae8f3982e71a54c6e8446a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f7a42984c1875bbc89e3761ecc64e09 = $(`<div id="html_0f7a42984c1875bbc89e3761ecc64e09" style="width: 100.0%; height: 100.0%;">Dispositivo: São Paulo, Distância: 9757 km</div>`)[0];
+            popup_0c9df0bfa9ae8f3982e71a54c6e8446a.setContent(html_0f7a42984c1875bbc89e3761ecc64e09);
+        
+
+        poly_line_b3c2a044cde8781e046c04f139532652.bindPopup(popup_0c9df0bfa9ae8f3982e71a54c6e8446a)
+        ;
+
+        
+    
+    
+            var poly_line_22b31559eb8f979d22872128ee7f3cb3 = L.polyline(
+                [[-23.6283, -46.6409], [-22.9485, -43.3436]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_169f6c0dfa8e911a299e54cd48b998fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e6da72b51c137ce1e62f7c0dd51a7b5 = $(`<div id="html_6e6da72b51c137ce1e62f7c0dd51a7b5" style="width: 100.0%; height: 100.0%;">Dispositivo: Rio de Janeiro, Distância: 345 km</div>`)[0];
+            popup_169f6c0dfa8e911a299e54cd48b998fb.setContent(html_6e6da72b51c137ce1e62f7c0dd51a7b5);
+        
+
+        poly_line_22b31559eb8f979d22872128ee7f3cb3.bindPopup(popup_169f6c0dfa8e911a299e54cd48b998fb)
+        ;
+
+        
+    
+    
+            var poly_line_e55935036f8f86fbadc3629534e2b083 = L.polyline(
+                [[-22.9485, -43.3436], [-23.6283, -46.6409]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_4eda18972d7194b1fb210b2b8c667417 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2d23f4310fc0f3dac1df3789d29599b = $(`<div id="html_f2d23f4310fc0f3dac1df3789d29599b" style="width: 100.0%; height: 100.0%;">Dispositivo: São Paulo, Distância: 345 km</div>`)[0];
+            popup_4eda18972d7194b1fb210b2b8c667417.setContent(html_f2d23f4310fc0f3dac1df3789d29599b);
+        
+
+        poly_line_e55935036f8f86fbadc3629534e2b083.bindPopup(popup_4eda18972d7194b1fb210b2b8c667417)
+        ;
+
+        
+    
+    
+            var poly_line_0d9f027dcf16ae6110b130d1f48efbd3 = L.polyline(
+                [[-23.6283, -46.6409], [37.9842, 23.7353]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_73b638cd291f49d88214994fb9b6244e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_993ff430fa7dd23976188527acb46e1c = $(`<div id="html_993ff430fa7dd23976188527acb46e1c" style="width: 100.0%; height: 100.0%;">Dispositivo: Atenas, Distância: 10034 km</div>`)[0];
+            popup_73b638cd291f49d88214994fb9b6244e.setContent(html_993ff430fa7dd23976188527acb46e1c);
+        
+
+        poly_line_0d9f027dcf16ae6110b130d1f48efbd3.bindPopup(popup_73b638cd291f49d88214994fb9b6244e)
+        ;
+
+        
+    
+    
+            var poly_line_23067bfce1a7f3624fbda21b73971303 = L.polyline(
+                [[37.9842, 23.7353], [-16.0696, -57.6794]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_5b93b4908690199e38f95d499735f8f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4cd561980c968862a0f377c9b5a26de = $(`<div id="html_c4cd561980c968862a0f377c9b5a26de" style="width: 100.0%; height: 100.0%;">Dispositivo: Caceres, Distância: 10372 km</div>`)[0];
+            popup_5b93b4908690199e38f95d499735f8f7.setContent(html_c4cd561980c968862a0f377c9b5a26de);
+        
+
+        poly_line_23067bfce1a7f3624fbda21b73971303.bindPopup(popup_5b93b4908690199e38f95d499735f8f7)
+        ;
+
+        
+    
+    
+            var poly_line_2a52f2a8db7e2b33c886c8f4dd59539e = L.polyline(
+                [[-16.0696, -57.6794], [37.9842, 23.7353]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_9e2561acf51ed294ea3bd77bfcb120f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8787aebe8fa50f84b5035273569d192f = $(`<div id="html_8787aebe8fa50f84b5035273569d192f" style="width: 100.0%; height: 100.0%;">Dispositivo: Atenas, Distância: 10372 km</div>`)[0];
+            popup_9e2561acf51ed294ea3bd77bfcb120f6.setContent(html_8787aebe8fa50f84b5035273569d192f);
+        
+
+        poly_line_2a52f2a8db7e2b33c886c8f4dd59539e.bindPopup(popup_9e2561acf51ed294ea3bd77bfcb120f6)
+        ;
+
+        
+    
+    
+            var poly_line_fd046e8530aa7429b8f7343b3ab30049 = L.polyline(
+                [[37.9842, 23.7353], [37.9667, 23.7167]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_9f8004164ad0d7615cd7c90f7ba9f2f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68b59575c3f2cdd93cbcd613feb2baed = $(`<div id="html_68b59575c3f2cdd93cbcd613feb2baed" style="width: 100.0%; height: 100.0%;">Dispositivo: Neápoli Spáton, Distância: 2 km</div>`)[0];
+            popup_9f8004164ad0d7615cd7c90f7ba9f2f4.setContent(html_68b59575c3f2cdd93cbcd613feb2baed);
+        
+
+        poly_line_fd046e8530aa7429b8f7343b3ab30049.bindPopup(popup_9f8004164ad0d7615cd7c90f7ba9f2f4)
+        ;
+
+        
+    
+    
+            var poly_line_382c92eb811c6b184d9db8e8d877673b = L.polyline(
+                [[37.9667, 23.7167], [-23.6283, -46.6409]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_15f1e736b5dc7d3d98761186b61de9c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f76f94efea23a605c8e838082e922dc7 = $(`<div id="html_f76f94efea23a605c8e838082e922dc7" style="width: 100.0%; height: 100.0%;">Dispositivo: São Paulo, Distância: 10031 km</div>`)[0];
+            popup_15f1e736b5dc7d3d98761186b61de9c3.setContent(html_f76f94efea23a605c8e838082e922dc7);
+        
+
+        poly_line_382c92eb811c6b184d9db8e8d877673b.bindPopup(popup_15f1e736b5dc7d3d98761186b61de9c3)
+        ;
+
+        
+    
+    
+            var poly_line_99dde5fbd5c2f7010489221e78edfca1 = L.polyline(
+                [[-23.6283, -46.6409], [-22.9485, -43.3436]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_3d8500e736a0563f46f624f8a7008655 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c7d64cc88fb86bc654ff57bb577b584 = $(`<div id="html_6c7d64cc88fb86bc654ff57bb577b584" style="width: 100.0%; height: 100.0%;">Dispositivo: Rio de Janeiro, Distância: 345 km</div>`)[0];
+            popup_3d8500e736a0563f46f624f8a7008655.setContent(html_6c7d64cc88fb86bc654ff57bb577b584);
+        
+
+        poly_line_99dde5fbd5c2f7010489221e78edfca1.bindPopup(popup_3d8500e736a0563f46f624f8a7008655)
+        ;
+
+        
+    
+    
+            var poly_line_eaccdf2460dc99aa3a061e298f889c89 = L.polyline(
+                [[-22.9485, -43.3436], [-23.6283, -46.6409]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_59791ff2bf47b21a0c421dde6303c74a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7537b227015f594de2e844dae9dd6ecd = $(`<div id="html_7537b227015f594de2e844dae9dd6ecd" style="width: 100.0%; height: 100.0%;">Dispositivo: São Paulo, Distância: 345 km</div>`)[0];
+            popup_59791ff2bf47b21a0c421dde6303c74a.setContent(html_7537b227015f594de2e844dae9dd6ecd);
+        
+
+        poly_line_eaccdf2460dc99aa3a061e298f889c89.bindPopup(popup_59791ff2bf47b21a0c421dde6303c74a)
+        ;
+
+        
+    
+    
+            var poly_line_1fac2102d118ab6c96fe26d1099af196 = L.polyline(
+                [[-23.6283, -46.6409], [-22.8305, -43.2192]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_d6ddee88fb5f1bbe2579bd74e4898e77 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41d4fca56f16f1b86e4cb280436ff432 = $(`<div id="html_41d4fca56f16f1b86e4cb280436ff432" style="width: 100.0%; height: 100.0%;">Dispositivo: Belém, Distância: 360 km</div>`)[0];
+            popup_d6ddee88fb5f1bbe2579bd74e4898e77.setContent(html_41d4fca56f16f1b86e4cb280436ff432);
+        
+
+        poly_line_1fac2102d118ab6c96fe26d1099af196.bindPopup(popup_d6ddee88fb5f1bbe2579bd74e4898e77)
+        ;
+
+        
+    
+    
+            var poly_line_6d454af8d387bd6d23ac3dfe75e1890f = L.polyline(
+                [[-22.8305, -43.2192], [-22.9485, -43.3436]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_2dc245852a32f790939c5267c1ca6646 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca33034dcba6abed4961a3c8f2c7f753 = $(`<div id="html_ca33034dcba6abed4961a3c8f2c7f753" style="width: 100.0%; height: 100.0%;">Dispositivo: Rio de Janeiro, Distância: 18 km</div>`)[0];
+            popup_2dc245852a32f790939c5267c1ca6646.setContent(html_ca33034dcba6abed4961a3c8f2c7f753);
+        
+
+        poly_line_6d454af8d387bd6d23ac3dfe75e1890f.bindPopup(popup_2dc245852a32f790939c5267c1ca6646)
+        ;
+
+        
+    
+    
+            var poly_line_e20fadc330253f33ca59a4bfa9d9fb38 = L.polyline(
+                [[-22.9485, -43.3436], [-30.0269, -51.2005]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_b3e8afcd61faff492fccf9f3a3640eab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_835ac810af1681a36c01f9f53bf9cb4f = $(`<div id="html_835ac810af1681a36c01f9f53bf9cb4f" style="width: 100.0%; height: 100.0%;">Dispositivo: Porto Alegre, Distância: 1108 km</div>`)[0];
+            popup_b3e8afcd61faff492fccf9f3a3640eab.setContent(html_835ac810af1681a36c01f9f53bf9cb4f);
+        
+
+        poly_line_e20fadc330253f33ca59a4bfa9d9fb38.bindPopup(popup_b3e8afcd61faff492fccf9f3a3640eab)
+        ;
+
+        
+    
+    
+            var poly_line_22e35d9d8f76a24ef0d066365be1e5e3 = L.polyline(
+                [[-30.0269, -51.2005], [37.751, -97.822]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_23edbba3147a02aac04ea8c54c584288 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1747fc1741a081fa409b31d8ecdeacdc = $(`<div id="html_1747fc1741a081fa409b31d8ecdeacdc" style="width: 100.0%; height: 100.0%;">Dispositivo: Iron Mountain, Distância: 8959 km</div>`)[0];
+            popup_23edbba3147a02aac04ea8c54c584288.setContent(html_1747fc1741a081fa409b31d8ecdeacdc);
+        
+
+        poly_line_22e35d9d8f76a24ef0d066365be1e5e3.bindPopup(popup_23edbba3147a02aac04ea8c54c584288)
+        ;
+
+        
+    
+    
+            var poly_line_e2de3f13b3d4d5beda2db77f07d17ce2 = L.polyline(
+                [[37.751, -97.822], [28.5788, -81.4396]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_51ccb30a5bc35f6d0103e53723023821 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a32370d75ff17777eda43cf56332d91 = $(`<div id="html_4a32370d75ff17777eda43cf56332d91" style="width: 100.0%; height: 100.0%;">Dispositivo: Orlando, Distância: 1830 km</div>`)[0];
+            popup_51ccb30a5bc35f6d0103e53723023821.setContent(html_4a32370d75ff17777eda43cf56332d91);
+        
+
+        poly_line_e2de3f13b3d4d5beda2db77f07d17ce2.bindPopup(popup_51ccb30a5bc35f6d0103e53723023821)
+        ;
+
+        
+    
+    
+            var poly_line_762ae6f7fab8054e9b36cfe073795470 = L.polyline(
+                [[28.5788, -81.4396], [37.751, -97.822]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_7f01c365c5e477341993266dd4752533 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da5f7217ba68c30c3489fbfdaca25da4 = $(`<div id="html_da5f7217ba68c30c3489fbfdaca25da4" style="width: 100.0%; height: 100.0%;">Dispositivo: Iron Mountain, Distância: 1830 km</div>`)[0];
+            popup_7f01c365c5e477341993266dd4752533.setContent(html_da5f7217ba68c30c3489fbfdaca25da4);
+        
+
+        poly_line_762ae6f7fab8054e9b36cfe073795470.bindPopup(popup_7f01c365c5e477341993266dd4752533)
+        ;
+
+        
+    
+    
+            var poly_line_ea614c8b2dea3f644ce90e5a127d077f = L.polyline(
+                [[37.751, -97.822], [28.6344, -81.6221]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_20b8f5069c9fd83401b99eb97ce7fb3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef6aff0ab66e5f5eac937aae7542fdeb = $(`<div id="html_ef6aff0ab66e5f5eac937aae7542fdeb" style="width: 100.0%; height: 100.0%;">Dispositivo: San Francisco, Distância: 1812 km</div>`)[0];
+            popup_20b8f5069c9fd83401b99eb97ce7fb3a.setContent(html_ef6aff0ab66e5f5eac937aae7542fdeb);
+        
+
+        poly_line_ea614c8b2dea3f644ce90e5a127d077f.bindPopup(popup_20b8f5069c9fd83401b99eb97ce7fb3a)
+        ;
+
+        
+    
+    
+            var poly_line_ff0f58702975cdb2edd30c842004932b = L.polyline(
+                [[28.6344, -81.6221], [37.751, -97.822]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_9caf367aed4c364517dff17d480a6361 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a9ce26676bca43c37acce8149d1f904 = $(`<div id="html_3a9ce26676bca43c37acce8149d1f904" style="width: 100.0%; height: 100.0%;">Dispositivo: Iron Mountain, Distância: 1812 km</div>`)[0];
+            popup_9caf367aed4c364517dff17d480a6361.setContent(html_3a9ce26676bca43c37acce8149d1f904);
+        
+
+        poly_line_ff0f58702975cdb2edd30c842004932b.bindPopup(popup_9caf367aed4c364517dff17d480a6361)
+        ;
+
+        
+    
+    
+            var poly_line_dcad61068002dcbd5151aa0faafb6477 = L.polyline(
+                [[37.751, -97.822], [-23.6283, -46.6409]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_d430b2e7f2e1e8a038797b364c0df290 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6eaece6d2871c8742bd761d16d25a4be = $(`<div id="html_6eaece6d2871c8742bd761d16d25a4be" style="width: 100.0%; height: 100.0%;">Dispositivo: São Paulo, Distância: 8668 km</div>`)[0];
+            popup_d430b2e7f2e1e8a038797b364c0df290.setContent(html_6eaece6d2871c8742bd761d16d25a4be);
+        
+
+        poly_line_dcad61068002dcbd5151aa0faafb6477.bindPopup(popup_d430b2e7f2e1e8a038797b364c0df290)
+        ;
+
+        
+    
+    
+            var poly_line_24e68cc23eba090d25a4e5aaef35d99b = L.polyline(
+                [[-23.6283, -46.6409], [37.751, -97.822]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_95497664656cc8ba5e2b733b85512e1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ae08adcd014c1f867911e0d42ef31cf = $(`<div id="html_1ae08adcd014c1f867911e0d42ef31cf" style="width: 100.0%; height: 100.0%;">Dispositivo: Iron Mountain, Distância: 8668 km</div>`)[0];
+            popup_95497664656cc8ba5e2b733b85512e1c.setContent(html_1ae08adcd014c1f867911e0d42ef31cf);
+        
+
+        poly_line_24e68cc23eba090d25a4e5aaef35d99b.bindPopup(popup_95497664656cc8ba5e2b733b85512e1c)
+        ;
+
+        
+    
+    
+            var poly_line_c89635fc20d75f21b95138c87176d4e6 = L.polyline(
+                [[37.751, -97.822], [-23.6283, -46.6409]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_ed40e00e8ca0f3fb232533558dd62fbd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd71967a83f41823b09e833e9c1285d4 = $(`<div id="html_cd71967a83f41823b09e833e9c1285d4" style="width: 100.0%; height: 100.0%;">Dispositivo: São Paulo, Distância: 8668 km</div>`)[0];
+            popup_ed40e00e8ca0f3fb232533558dd62fbd.setContent(html_cd71967a83f41823b09e833e9c1285d4);
+        
+
+        poly_line_c89635fc20d75f21b95138c87176d4e6.bindPopup(popup_ed40e00e8ca0f3fb232533558dd62fbd)
+        ;
+
+        
+    
+    
+            var poly_line_bf78e32c681bdb8b314d2f5cd40a81b2 = L.polyline(
+                [[-23.6283, -46.6409], [37.751, -97.822]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_5f8d5ae372d52c712a749e5f1333c34d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3d626c703e8e3a568b2ff6db0744319 = $(`<div id="html_b3d626c703e8e3a568b2ff6db0744319" style="width: 100.0%; height: 100.0%;">Dispositivo: Iron Mountain, Distância: 8668 km</div>`)[0];
+            popup_5f8d5ae372d52c712a749e5f1333c34d.setContent(html_b3d626c703e8e3a568b2ff6db0744319);
+        
+
+        poly_line_bf78e32c681bdb8b314d2f5cd40a81b2.bindPopup(popup_5f8d5ae372d52c712a749e5f1333c34d)
+        ;
+
+        
+    
+    
+            var poly_line_b9c52a6924d3ec7880d6c6121f9496c7 = L.polyline(
+                [[37.751, -97.822], [-23.6283, -46.6409]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_af7ace145007749d0584f56f4f424ca2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a5a0be4896b25f446b59b609c56a73d = $(`<div id="html_7a5a0be4896b25f446b59b609c56a73d" style="width: 100.0%; height: 100.0%;">Dispositivo: São Paulo, Distância: 8668 km</div>`)[0];
+            popup_af7ace145007749d0584f56f4f424ca2.setContent(html_7a5a0be4896b25f446b59b609c56a73d);
+        
+
+        poly_line_b9c52a6924d3ec7880d6c6121f9496c7.bindPopup(popup_af7ace145007749d0584f56f4f424ca2)
+        ;
+
+        
+    
+    
+            var poly_line_c669d1dff3eaafbb3c652870a0f6b878 = L.polyline(
+                [[-23.6283, -46.6409], [37.751, -97.822]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_6119dbeee9b538fc71931864737f7c27 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0b631b39b17b406a7202fc82c84f1581 = $(`<div id="html_0b631b39b17b406a7202fc82c84f1581" style="width: 100.0%; height: 100.0%;">Dispositivo: Iron Mountain, Distância: 8668 km</div>`)[0];
+            popup_6119dbeee9b538fc71931864737f7c27.setContent(html_0b631b39b17b406a7202fc82c84f1581);
+        
+
+        poly_line_c669d1dff3eaafbb3c652870a0f6b878.bindPopup(popup_6119dbeee9b538fc71931864737f7c27)
+        ;
+
+        
+    
+    
+            var poly_line_873a1d2cc610a9b4672df0b8b0a8954a = L.polyline(
+                [[37.751, -97.822], [28.4932, -81.2878]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_848073bf6e0f6499d3f16296261402c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6fd42266245b9ab8bdc1b3fd04e821fb = $(`<div id="html_6fd42266245b9ab8bdc1b3fd04e821fb" style="width: 100.0%; height: 100.0%;">Dispositivo: Orlando, Distância: 1847 km</div>`)[0];
+            popup_848073bf6e0f6499d3f16296261402c2.setContent(html_6fd42266245b9ab8bdc1b3fd04e821fb);
+        
+
+        poly_line_873a1d2cc610a9b4672df0b8b0a8954a.bindPopup(popup_848073bf6e0f6499d3f16296261402c2)
+        ;
+
+        
+    
+    
+            var poly_line_7cab7b5076a53af48f7bdde872d761f6 = L.polyline(
+                [[28.4932, -81.2878], [40.738, -73.9858]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_886bde1b4367152eba74c46e7a4e49ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ab4748b79c991995f1d52099f743d15 = $(`<div id="html_8ab4748b79c991995f1d52099f743d15" style="width: 100.0%; height: 100.0%;">Dispositivo: Nova Iorque, Distância: 1515 km</div>`)[0];
+            popup_886bde1b4367152eba74c46e7a4e49ab.setContent(html_8ab4748b79c991995f1d52099f743d15);
+        
+
+        poly_line_7cab7b5076a53af48f7bdde872d761f6.bindPopup(popup_886bde1b4367152eba74c46e7a4e49ab)
+        ;
+
+        
+    
+    
+            var poly_line_f996d99dbd435fb62bee5326b02ddf25 = L.polyline(
+                [[40.738, -73.9858], [40.3015, -74.5027]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_afabd86a6aac7f3968743835c22a9f63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f75a523ccb6282fd1ad863a552277c47 = $(`<div id="html_f75a523ccb6282fd1ad863a552277c47" style="width: 100.0%; height: 100.0%;">Dispositivo: Cranbury, Distância: 65 km</div>`)[0];
+            popup_afabd86a6aac7f3968743835c22a9f63.setContent(html_f75a523ccb6282fd1ad863a552277c47);
+        
+
+        poly_line_f996d99dbd435fb62bee5326b02ddf25.bindPopup(popup_afabd86a6aac7f3968743835c22a9f63)
+        ;
+
+        
+    
+    
+            var poly_line_e81d90041870eacfa61d12c789da7db3 = L.polyline(
+                [[40.3015, -74.5027], [40.738, -73.9858]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_2985783170d774afcfb8c6a0519802dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_358fcc171b8bcc3031005495150e1805 = $(`<div id="html_358fcc171b8bcc3031005495150e1805" style="width: 100.0%; height: 100.0%;">Dispositivo: Nova Iorque, Distância: 65 km</div>`)[0];
+            popup_2985783170d774afcfb8c6a0519802dc.setContent(html_358fcc171b8bcc3031005495150e1805);
+        
+
+        poly_line_e81d90041870eacfa61d12c789da7db3.bindPopup(popup_2985783170d774afcfb8c6a0519802dc)
+        ;
+
+        
+    
+    
+            var poly_line_4925aa006c6a1dcaafd75fbc7c64336b = L.polyline(
+                [[40.7157, -74.0], [-29.9228, -51.1744]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_7006dca2bf56a163f127757c9689f9f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c771ecd84a9ff4e414b5bc30fa026e36 = $(`<div id="html_c771ecd84a9ff4e414b5bc30fa026e36" style="width: 100.0%; height: 100.0%;">Dispositivo: Canoas, Distância: 8198 km</div>`)[0];
+            popup_7006dca2bf56a163f127757c9689f9f6.setContent(html_c771ecd84a9ff4e414b5bc30fa026e36);
+        
+
+        poly_line_4925aa006c6a1dcaafd75fbc7c64336b.bindPopup(popup_7006dca2bf56a163f127757c9689f9f6)
+        ;
+
+        
+    
+    
+            var poly_line_fb9314ab5a97c6189add769c4cd6021b = L.polyline(
+                [[-29.9228, -51.1744], [40.738, -73.9858]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_5c421300211f5d6bf4472cac3d0a192e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_136c5a22d29ae510925c69e31e45e78f = $(`<div id="html_136c5a22d29ae510925c69e31e45e78f" style="width: 100.0%; height: 100.0%;">Dispositivo: Nova Iorque, Distância: 8200 km</div>`)[0];
+            popup_5c421300211f5d6bf4472cac3d0a192e.setContent(html_136c5a22d29ae510925c69e31e45e78f);
+        
+
+        poly_line_fb9314ab5a97c6189add769c4cd6021b.bindPopup(popup_5c421300211f5d6bf4472cac3d0a192e)
+        ;
+
+        
+    
+    
+            var poly_line_0285b9670541d09da894d0605974171d = L.polyline(
+                [[40.738, -73.9858], [-22.9485, -43.3436]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_8cc33d3b0b9c10af095131e188a26d66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5243b709370daea8a9bfa9a0016d2eb3 = $(`<div id="html_5243b709370daea8a9bfa9a0016d2eb3" style="width: 100.0%; height: 100.0%;">Dispositivo: Rio de Janeiro, Distância: 7757 km</div>`)[0];
+            popup_8cc33d3b0b9c10af095131e188a26d66.setContent(html_5243b709370daea8a9bfa9a0016d2eb3);
+        
+
+        poly_line_0285b9670541d09da894d0605974171d.bindPopup(popup_8cc33d3b0b9c10af095131e188a26d66)
+        ;
+
+        
+    
+    
+            var poly_line_a9280dffba5ac35e7461a8a99b775fde = L.polyline(
+                [[-22.9485, -43.3436], [-23.6283, -46.6409]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_f42cc56b294796f7f3f9c1aea45e8df3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68817985425d04e20b0da32c08e7da97 = $(`<div id="html_68817985425d04e20b0da32c08e7da97" style="width: 100.0%; height: 100.0%;">Dispositivo: São Paulo, Distância: 345 km</div>`)[0];
+            popup_f42cc56b294796f7f3f9c1aea45e8df3.setContent(html_68817985425d04e20b0da32c08e7da97);
+        
+
+        poly_line_a9280dffba5ac35e7461a8a99b775fde.bindPopup(popup_f42cc56b294796f7f3f9c1aea45e8df3)
+        ;
+
+        
+    
+    
+            var poly_line_faec1752c5a1cd45bba5c827ea205b5a = L.polyline(
+                [[-23.6283, -46.6409], [-22.7067, -46.7743]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_88f64df2fc5cadd7de28402eb9fc54fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a42b712acd48dbdf201d8c6472663ed2 = $(`<div id="html_a42b712acd48dbdf201d8c6472663ed2" style="width: 100.0%; height: 100.0%;">Dispositivo: Amparo, Distância: 103 km</div>`)[0];
+            popup_88f64df2fc5cadd7de28402eb9fc54fc.setContent(html_a42b712acd48dbdf201d8c6472663ed2);
+        
+
+        poly_line_faec1752c5a1cd45bba5c827ea205b5a.bindPopup(popup_88f64df2fc5cadd7de28402eb9fc54fc)
+        ;
+
+        
+    
+    
+            var poly_line_920129ef2eb57efaa0d891cc2b38a099 = L.polyline(
+                [[-22.7067, -46.7743], [47.6034, -122.3414]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_5fa2133e17d0b3a2d406500fefa6c4fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9057210d81831af5e3842cfd84ce7356 = $(`<div id="html_9057210d81831af5e3842cfd84ce7356" style="width: 100.0%; height: 100.0%;">Dispositivo: Stockbridge, Distância: 10838 km</div>`)[0];
+            popup_5fa2133e17d0b3a2d406500fefa6c4fe.setContent(html_9057210d81831af5e3842cfd84ce7356);
+        
+
+        poly_line_920129ef2eb57efaa0d891cc2b38a099.bindPopup(popup_5fa2133e17d0b3a2d406500fefa6c4fe)
+        ;
+
+        
+    
+    
+            var poly_line_df3876c3180c6b305bf5cbd3ca0edb7f = L.polyline(
+                [[47.6034, -122.3414], [-22.9485, -43.3436]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": "10,10", "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2d383c03d5e73ed7728cc40a58585c2b);
+        
+    
+        var popup_f0450297bde099aee72b89e2c163478c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46881db9352d4b9f2c1faf42dc0d800c = $(`<div id="html_46881db9352d4b9f2c1faf42dc0d800c" style="width: 100.0%; height: 100.0%;">Dispositivo: Rio de Janeiro, Distância: 11092 km</div>`)[0];
+            popup_f0450297bde099aee72b89e2c163478c.setContent(html_46881db9352d4b9f2c1faf42dc0d800c);
+        
+
+        poly_line_df3876c3180c6b305bf5cbd3ca0edb7f.bindPopup(popup_f0450297bde099aee72b89e2c163478c)
+        ;
+
+        
+    
+    
+            var feature_group_1b2777bed40881f1c534f7206bfe126f = L.featureGroup(
+                {}
+            ).addTo(map_d7e95c67f1e5e7b64355cb2e9f1e9a86);
+        
+    
+            var circle_marker_f532e6dad4c769db26f91eea35c76c7f = L.circleMarker(
+                [-22.9485, -43.3436],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_8718a40f1909e183afd6ff4624e177aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0da7b738693676e903739b243da8fcee = $(`<div id="html_0da7b738693676e903739b243da8fcee" style="width: 100.0%; height: 100.0%;">Cidade Origem: São Paulo, Distância: 345 km</div>`)[0];
+            popup_8718a40f1909e183afd6ff4624e177aa.setContent(html_0da7b738693676e903739b243da8fcee);
+        
+
+        circle_marker_f532e6dad4c769db26f91eea35c76c7f.bindPopup(popup_8718a40f1909e183afd6ff4624e177aa)
+        ;
+
+        
+    
+    
+            var circle_marker_92dbcd754916d1f70448d7f1ecba292e = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_af4dbc0858e152360e1b4fe67b52b41c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1572df8d301a7328678084c16c5e206d = $(`<div id="html_1572df8d301a7328678084c16c5e206d" style="width: 100.0%; height: 100.0%;">Cidade Destino: São Paulo, Distância: 345 km</div>`)[0];
+            popup_af4dbc0858e152360e1b4fe67b52b41c.setContent(html_1572df8d301a7328678084c16c5e206d);
+        
+
+        circle_marker_92dbcd754916d1f70448d7f1ecba292e.bindPopup(popup_af4dbc0858e152360e1b4fe67b52b41c)
+        ;
+
+        
+    
+    
+            var circle_marker_4f17b0500d69e97e92f93e98999df810 = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_cbfddf294cc274f61df25d264680b090 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_465ca5b0977f5a4dde56a5c71495737a = $(`<div id="html_465ca5b0977f5a4dde56a5c71495737a" style="width: 100.0%; height: 100.0%;">Cidade Origem: Rio de Janeiro, Distância: 345 km</div>`)[0];
+            popup_cbfddf294cc274f61df25d264680b090.setContent(html_465ca5b0977f5a4dde56a5c71495737a);
+        
+
+        circle_marker_4f17b0500d69e97e92f93e98999df810.bindPopup(popup_cbfddf294cc274f61df25d264680b090)
+        ;
+
+        
+    
+    
+            var circle_marker_2db6190f0780d7ab481d5edc456cd3f5 = L.circleMarker(
+                [-22.9485, -43.3436],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_9747aff8e82bd135f4e6960b81b627c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8924010c7db79c9df0f9031e864db224 = $(`<div id="html_8924010c7db79c9df0f9031e864db224" style="width: 100.0%; height: 100.0%;">Cidade Destino: Rio de Janeiro, Distância: 345 km</div>`)[0];
+            popup_9747aff8e82bd135f4e6960b81b627c0.setContent(html_8924010c7db79c9df0f9031e864db224);
+        
+
+        circle_marker_2db6190f0780d7ab481d5edc456cd3f5.bindPopup(popup_9747aff8e82bd135f4e6960b81b627c0)
+        ;
+
+        
+    
+    
+            var circle_marker_1c114201f5a219a463cfbc3d91d34c27 = L.circleMarker(
+                [-22.9485, -43.3436],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_126b8cd343a2fe2678d81b2540d2d215 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8dbbfee500f78cfffd2570b436f728cb = $(`<div id="html_8dbbfee500f78cfffd2570b436f728cb" style="width: 100.0%; height: 100.0%;">Cidade Origem: São Paulo, Distância: 345 km</div>`)[0];
+            popup_126b8cd343a2fe2678d81b2540d2d215.setContent(html_8dbbfee500f78cfffd2570b436f728cb);
+        
+
+        circle_marker_1c114201f5a219a463cfbc3d91d34c27.bindPopup(popup_126b8cd343a2fe2678d81b2540d2d215)
+        ;
+
+        
+    
+    
+            var circle_marker_d0bbe024923073196f39ef4a5a9bc907 = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_e77da512afbf82a50263dd859ac94cc2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa65daebc640da77d81173b1303ee660 = $(`<div id="html_aa65daebc640da77d81173b1303ee660" style="width: 100.0%; height: 100.0%;">Cidade Destino: São Paulo, Distância: 345 km</div>`)[0];
+            popup_e77da512afbf82a50263dd859ac94cc2.setContent(html_aa65daebc640da77d81173b1303ee660);
+        
+
+        circle_marker_d0bbe024923073196f39ef4a5a9bc907.bindPopup(popup_e77da512afbf82a50263dd859ac94cc2)
+        ;
+
+        
+    
+    
+            var circle_marker_57a4273d3cde5221575c8ffb9ef46cd9 = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_d4735a30e514afb611bdad4f8a7175de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72444f7582d8a94357c2fc2108224357 = $(`<div id="html_72444f7582d8a94357c2fc2108224357" style="width: 100.0%; height: 100.0%;">Cidade Origem: Rio de Janeiro, Distância: 345 km</div>`)[0];
+            popup_d4735a30e514afb611bdad4f8a7175de.setContent(html_72444f7582d8a94357c2fc2108224357);
+        
+
+        circle_marker_57a4273d3cde5221575c8ffb9ef46cd9.bindPopup(popup_d4735a30e514afb611bdad4f8a7175de)
+        ;
+
+        
+    
+    
+            var circle_marker_ff2b0b038db2583ed83288af77be06ba = L.circleMarker(
+                [-22.9485, -43.3436],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_006a022ee5e011a2132b227fc4f89727 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ba927e6781ac29104d954d550db2189 = $(`<div id="html_5ba927e6781ac29104d954d550db2189" style="width: 100.0%; height: 100.0%;">Cidade Destino: Rio de Janeiro, Distância: 345 km</div>`)[0];
+            popup_006a022ee5e011a2132b227fc4f89727.setContent(html_5ba927e6781ac29104d954d550db2189);
+        
+
+        circle_marker_ff2b0b038db2583ed83288af77be06ba.bindPopup(popup_006a022ee5e011a2132b227fc4f89727)
+        ;
+
+        
+    
+    
+            var circle_marker_fcc9c6416a680f85012678405a980fc4 = L.circleMarker(
+                [-22.9485, -43.3436],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_b21aacb0c2a0bc7b9bd51fc35c665c91 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7893a596d55ac1292dea770254bb6103 = $(`<div id="html_7893a596d55ac1292dea770254bb6103" style="width: 100.0%; height: 100.0%;">Cidade Origem: Milão, Distância: 9274 km</div>`)[0];
+            popup_b21aacb0c2a0bc7b9bd51fc35c665c91.setContent(html_7893a596d55ac1292dea770254bb6103);
+        
+
+        circle_marker_fcc9c6416a680f85012678405a980fc4.bindPopup(popup_b21aacb0c2a0bc7b9bd51fc35c665c91)
+        ;
+
+        
+    
+    
+            var circle_marker_cc2b50c86f68972e4a98598356e0f890 = L.circleMarker(
+                [45.4722, 9.1922],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_bd0ba1a635cde88c8f503ad8a8c4ffef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf4016749b95db5906a5f02780b4c1de = $(`<div id="html_cf4016749b95db5906a5f02780b4c1de" style="width: 100.0%; height: 100.0%;">Cidade Destino: Milão, Distância: 9274 km</div>`)[0];
+            popup_bd0ba1a635cde88c8f503ad8a8c4ffef.setContent(html_cf4016749b95db5906a5f02780b4c1de);
+        
+
+        circle_marker_cc2b50c86f68972e4a98598356e0f890.bindPopup(popup_bd0ba1a635cde88c8f503ad8a8c4ffef)
+        ;
+
+        
+    
+    
+            var circle_marker_9244102d0c1b4b1efca2dec960b97b53 = L.circleMarker(
+                [45.4722, 9.1922],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_e1815cda6e7eedba32bdf5e78363fd80 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a90f22114b567c0e49be535381c37c20 = $(`<div id="html_a90f22114b567c0e49be535381c37c20" style="width: 100.0%; height: 100.0%;">Cidade Origem: São Paulo, Distância: 9528 km</div>`)[0];
+            popup_e1815cda6e7eedba32bdf5e78363fd80.setContent(html_a90f22114b567c0e49be535381c37c20);
+        
+
+        circle_marker_9244102d0c1b4b1efca2dec960b97b53.bindPopup(popup_e1815cda6e7eedba32bdf5e78363fd80)
+        ;
+
+        
+    
+    
+            var circle_marker_40035dd4cb957412a74e3ca478892375 = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_e408026fb16e45f4d249dfbf2db045e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ddddca125ab5682d8408a873fbf2a82 = $(`<div id="html_4ddddca125ab5682d8408a873fbf2a82" style="width: 100.0%; height: 100.0%;">Cidade Destino: São Paulo, Distância: 9528 km</div>`)[0];
+            popup_e408026fb16e45f4d249dfbf2db045e4.setContent(html_4ddddca125ab5682d8408a873fbf2a82);
+        
+
+        circle_marker_40035dd4cb957412a74e3ca478892375.bindPopup(popup_e408026fb16e45f4d249dfbf2db045e4)
+        ;
+
+        
+    
+    
+            var circle_marker_90640b0d62252c56829480bd6058731b = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_e1da524c0168e2d308421dbb59c4282e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8447ce1f78bf4a927ee979e24f93edd = $(`<div id="html_d8447ce1f78bf4a927ee979e24f93edd" style="width: 100.0%; height: 100.0%;">Cidade Origem: Milão, Distância: 9528 km</div>`)[0];
+            popup_e1da524c0168e2d308421dbb59c4282e.setContent(html_d8447ce1f78bf4a927ee979e24f93edd);
+        
+
+        circle_marker_90640b0d62252c56829480bd6058731b.bindPopup(popup_e1da524c0168e2d308421dbb59c4282e)
+        ;
+
+        
+    
+    
+            var circle_marker_908d4c07fc2db247a36f1384f43cb625 = L.circleMarker(
+                [45.4722, 9.1922],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_6a7ea6dd54705a1fa158f9a5d6136489 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a71ac2b43f4d5ea5137977e3006b06f = $(`<div id="html_4a71ac2b43f4d5ea5137977e3006b06f" style="width: 100.0%; height: 100.0%;">Cidade Destino: Milão, Distância: 9528 km</div>`)[0];
+            popup_6a7ea6dd54705a1fa158f9a5d6136489.setContent(html_4a71ac2b43f4d5ea5137977e3006b06f);
+        
+
+        circle_marker_908d4c07fc2db247a36f1384f43cb625.bindPopup(popup_6a7ea6dd54705a1fa158f9a5d6136489)
+        ;
+
+        
+    
+    
+            var circle_marker_e7611c298773e9d8f19c3f381493c36a = L.circleMarker(
+                [45.4722, 9.1922],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_8f0d7c806278925ee1c49e4330ee750a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21decb3be88ee6f0c6cfb298f5f4cdab = $(`<div id="html_21decb3be88ee6f0c6cfb298f5f4cdab" style="width: 100.0%; height: 100.0%;">Cidade Origem: São Paulo, Distância: 9528 km</div>`)[0];
+            popup_8f0d7c806278925ee1c49e4330ee750a.setContent(html_21decb3be88ee6f0c6cfb298f5f4cdab);
+        
+
+        circle_marker_e7611c298773e9d8f19c3f381493c36a.bindPopup(popup_8f0d7c806278925ee1c49e4330ee750a)
+        ;
+
+        
+    
+    
+            var circle_marker_df6730b2716b03561aff9ec1ea5b1dcd = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_3fb0ddc7f56862d366b4d5ab162326d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7e08f83ab7a2c562ed6d8c1a2045799 = $(`<div id="html_b7e08f83ab7a2c562ed6d8c1a2045799" style="width: 100.0%; height: 100.0%;">Cidade Destino: São Paulo, Distância: 9528 km</div>`)[0];
+            popup_3fb0ddc7f56862d366b4d5ab162326d2.setContent(html_b7e08f83ab7a2c562ed6d8c1a2045799);
+        
+
+        circle_marker_df6730b2716b03561aff9ec1ea5b1dcd.bindPopup(popup_3fb0ddc7f56862d366b4d5ab162326d2)
+        ;
+
+        
+    
+    
+            var circle_marker_ae0d0031c6eaddcbe8a24de70bac740f = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_98c6a74a33be3e5b66b933b5cc672374 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6632a0c8006df75141dbaff86dc948aa = $(`<div id="html_6632a0c8006df75141dbaff86dc948aa" style="width: 100.0%; height: 100.0%;">Cidade Origem: Milão, Distância: 9528 km</div>`)[0];
+            popup_98c6a74a33be3e5b66b933b5cc672374.setContent(html_6632a0c8006df75141dbaff86dc948aa);
+        
+
+        circle_marker_ae0d0031c6eaddcbe8a24de70bac740f.bindPopup(popup_98c6a74a33be3e5b66b933b5cc672374)
+        ;
+
+        
+    
+    
+            var circle_marker_f0a60caa483b5cc08aad292a5b7e3ec0 = L.circleMarker(
+                [45.4722, 9.1922],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_a0e5e2bb18619e6178eae5455342506b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e47a97086a137ed1a31c5875c9de852 = $(`<div id="html_7e47a97086a137ed1a31c5875c9de852" style="width: 100.0%; height: 100.0%;">Cidade Destino: Milão, Distância: 9528 km</div>`)[0];
+            popup_a0e5e2bb18619e6178eae5455342506b.setContent(html_7e47a97086a137ed1a31c5875c9de852);
+        
+
+        circle_marker_f0a60caa483b5cc08aad292a5b7e3ec0.bindPopup(popup_a0e5e2bb18619e6178eae5455342506b)
+        ;
+
+        
+    
+    
+            var circle_marker_0447e4fd5eb12912e598be7ce605ce8a = L.circleMarker(
+                [45.4722, 9.1922],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_6fd05b3445110bf21a6ce795b3bc71c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9316d2a8ba302f5c38dff788df591f78 = $(`<div id="html_9316d2a8ba302f5c38dff788df591f78" style="width: 100.0%; height: 100.0%;">Cidade Origem: Mar Vermelho, Distância: 7612 km</div>`)[0];
+            popup_6fd05b3445110bf21a6ce795b3bc71c1.setContent(html_9316d2a8ba302f5c38dff788df591f78);
+        
+
+        circle_marker_0447e4fd5eb12912e598be7ce605ce8a.bindPopup(popup_6fd05b3445110bf21a6ce795b3bc71c1)
+        ;
+
+        
+    
+    
+            var circle_marker_3dd77e33bab25470600318f2195ba4e3 = L.circleMarker(
+                [-9.4488, -36.3859],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_f0b60840993f45667c122b9fb68e5d98 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b1e64e7aa80efa88372dd47670ca5a21 = $(`<div id="html_b1e64e7aa80efa88372dd47670ca5a21" style="width: 100.0%; height: 100.0%;">Cidade Destino: Mar Vermelho, Distância: 7612 km</div>`)[0];
+            popup_f0b60840993f45667c122b9fb68e5d98.setContent(html_b1e64e7aa80efa88372dd47670ca5a21);
+        
+
+        circle_marker_3dd77e33bab25470600318f2195ba4e3.bindPopup(popup_f0b60840993f45667c122b9fb68e5d98)
+        ;
+
+        
+    
+    
+            var circle_marker_537eba08ad4af87934deb8da5c6c73bb = L.circleMarker(
+                [-9.4488, -36.3859],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_82df8f0e61ef89aca96dbe023221393c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_768bd2b5fa6acfe688c42962d39768ec = $(`<div id="html_768bd2b5fa6acfe688c42962d39768ec" style="width: 100.0%; height: 100.0%;">Cidade Origem: São Paulo, Distância: 1916 km</div>`)[0];
+            popup_82df8f0e61ef89aca96dbe023221393c.setContent(html_768bd2b5fa6acfe688c42962d39768ec);
+        
+
+        circle_marker_537eba08ad4af87934deb8da5c6c73bb.bindPopup(popup_82df8f0e61ef89aca96dbe023221393c)
+        ;
+
+        
+    
+    
+            var circle_marker_7d44c007cb09b6be2d9e7d16dda6b1bd = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_fe59a7d6027848c3330a23a7a985fdc6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_793f5f2c31e4ad6cee2af37ac4ad8ac0 = $(`<div id="html_793f5f2c31e4ad6cee2af37ac4ad8ac0" style="width: 100.0%; height: 100.0%;">Cidade Destino: São Paulo, Distância: 1916 km</div>`)[0];
+            popup_fe59a7d6027848c3330a23a7a985fdc6.setContent(html_793f5f2c31e4ad6cee2af37ac4ad8ac0);
+        
+
+        circle_marker_7d44c007cb09b6be2d9e7d16dda6b1bd.bindPopup(popup_fe59a7d6027848c3330a23a7a985fdc6)
+        ;
+
+        
+    
+    
+            var circle_marker_b7176da2482c236bff46132247251a01 = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_e1f0895916a77e7b99bc5849f5aa7370 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94d8ae007153d0f5689e8c1010ea150c = $(`<div id="html_94d8ae007153d0f5689e8c1010ea150c" style="width: 100.0%; height: 100.0%;">Cidade Origem: Belluno, Distância: 9757 km</div>`)[0];
+            popup_e1f0895916a77e7b99bc5849f5aa7370.setContent(html_94d8ae007153d0f5689e8c1010ea150c);
+        
+
+        circle_marker_b7176da2482c236bff46132247251a01.bindPopup(popup_e1f0895916a77e7b99bc5849f5aa7370)
+        ;
+
+        
+    
+    
+            var circle_marker_2336ce550e4035577ed2eae08a125369 = L.circleMarker(
+                [46.1394, 12.2213],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_a709197eaa2c2b81a13a5adaefe71c93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6fed86919598c60384dcff7e2a66fb83 = $(`<div id="html_6fed86919598c60384dcff7e2a66fb83" style="width: 100.0%; height: 100.0%;">Cidade Destino: Belluno, Distância: 9757 km</div>`)[0];
+            popup_a709197eaa2c2b81a13a5adaefe71c93.setContent(html_6fed86919598c60384dcff7e2a66fb83);
+        
+
+        circle_marker_2336ce550e4035577ed2eae08a125369.bindPopup(popup_a709197eaa2c2b81a13a5adaefe71c93)
+        ;
+
+        
+    
+    
+            var circle_marker_5cdc3d63414a615b9077b131043b5dd7 = L.circleMarker(
+                [46.1394, 12.2213],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_2df107c4450a402496df0da526eefa86 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b523710993860f8e8267f10c4967dd7f = $(`<div id="html_b523710993860f8e8267f10c4967dd7f" style="width: 100.0%; height: 100.0%;">Cidade Origem: Porto Alegre, Distância: 10608 km</div>`)[0];
+            popup_2df107c4450a402496df0da526eefa86.setContent(html_b523710993860f8e8267f10c4967dd7f);
+        
+
+        circle_marker_5cdc3d63414a615b9077b131043b5dd7.bindPopup(popup_2df107c4450a402496df0da526eefa86)
+        ;
+
+        
+    
+    
+            var circle_marker_a160293967eec37f3c2888ce85ebc85a = L.circleMarker(
+                [-30.1169, -51.2658],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_09ccf0c703151bcf4aca0dc5ba5e03d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54676c9a73159fd11ce2bac340f71e63 = $(`<div id="html_54676c9a73159fd11ce2bac340f71e63" style="width: 100.0%; height: 100.0%;">Cidade Destino: Porto Alegre, Distância: 10608 km</div>`)[0];
+            popup_09ccf0c703151bcf4aca0dc5ba5e03d4.setContent(html_54676c9a73159fd11ce2bac340f71e63);
+        
+
+        circle_marker_a160293967eec37f3c2888ce85ebc85a.bindPopup(popup_09ccf0c703151bcf4aca0dc5ba5e03d4)
+        ;
+
+        
+    
+    
+            var circle_marker_4ef201527ccc6ce6890452f927bf7d53 = L.circleMarker(
+                [-30.1169, -51.2658],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_544a168a5fd714380b554ff00719a8a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39e1dd91542c00d89c70d90cc9725ec6 = $(`<div id="html_39e1dd91542c00d89c70d90cc9725ec6" style="width: 100.0%; height: 100.0%;">Cidade Origem: Belluno, Distância: 10608 km</div>`)[0];
+            popup_544a168a5fd714380b554ff00719a8a2.setContent(html_39e1dd91542c00d89c70d90cc9725ec6);
+        
+
+        circle_marker_4ef201527ccc6ce6890452f927bf7d53.bindPopup(popup_544a168a5fd714380b554ff00719a8a2)
+        ;
+
+        
+    
+    
+            var circle_marker_aa9aca9ccec8bbf6641f629c4b8eca1f = L.circleMarker(
+                [46.1394, 12.2213],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_d9287d5717efe63552902d5c72b64a14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4880d129f0e65a0b93010c57a86af26 = $(`<div id="html_e4880d129f0e65a0b93010c57a86af26" style="width: 100.0%; height: 100.0%;">Cidade Destino: Belluno, Distância: 10608 km</div>`)[0];
+            popup_d9287d5717efe63552902d5c72b64a14.setContent(html_e4880d129f0e65a0b93010c57a86af26);
+        
+
+        circle_marker_aa9aca9ccec8bbf6641f629c4b8eca1f.bindPopup(popup_d9287d5717efe63552902d5c72b64a14)
+        ;
+
+        
+    
+    
+            var circle_marker_e741d3952abb5d235c403fe0c5d558c2 = L.circleMarker(
+                [46.1394, 12.2213],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_fab59e4b280f137ccc3b970846fd3493 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae3c03bc51203d0d6612b8725340837d = $(`<div id="html_ae3c03bc51203d0d6612b8725340837d" style="width: 100.0%; height: 100.0%;">Cidade Origem: São Paulo, Distância: 9757 km</div>`)[0];
+            popup_fab59e4b280f137ccc3b970846fd3493.setContent(html_ae3c03bc51203d0d6612b8725340837d);
+        
+
+        circle_marker_e741d3952abb5d235c403fe0c5d558c2.bindPopup(popup_fab59e4b280f137ccc3b970846fd3493)
+        ;
+
+        
+    
+    
+            var circle_marker_776a4a3df8b00cb63f58c5e5aea8e040 = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_43bb371010d82fcfb7f3a6ac067f5081 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16d30473c7d33be6a7f1dde96d188ccd = $(`<div id="html_16d30473c7d33be6a7f1dde96d188ccd" style="width: 100.0%; height: 100.0%;">Cidade Destino: São Paulo, Distância: 9757 km</div>`)[0];
+            popup_43bb371010d82fcfb7f3a6ac067f5081.setContent(html_16d30473c7d33be6a7f1dde96d188ccd);
+        
+
+        circle_marker_776a4a3df8b00cb63f58c5e5aea8e040.bindPopup(popup_43bb371010d82fcfb7f3a6ac067f5081)
+        ;
+
+        
+    
+    
+            var circle_marker_39a7803b580a948af7df8fa8d7a807cd = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_20662f0ce6ae5a30bcc873e057f4c03b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4b41c3e0404a67cee7906f45d16658fb = $(`<div id="html_4b41c3e0404a67cee7906f45d16658fb" style="width: 100.0%; height: 100.0%;">Cidade Origem: Rio de Janeiro, Distância: 345 km</div>`)[0];
+            popup_20662f0ce6ae5a30bcc873e057f4c03b.setContent(html_4b41c3e0404a67cee7906f45d16658fb);
+        
+
+        circle_marker_39a7803b580a948af7df8fa8d7a807cd.bindPopup(popup_20662f0ce6ae5a30bcc873e057f4c03b)
+        ;
+
+        
+    
+    
+            var circle_marker_911ec8894cc501e392ff39e8fd181720 = L.circleMarker(
+                [-22.9485, -43.3436],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_4fe989ddfa4ac7ff686c2da4ed77844f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e977f093cccf4b0b1c97ddb9142915b8 = $(`<div id="html_e977f093cccf4b0b1c97ddb9142915b8" style="width: 100.0%; height: 100.0%;">Cidade Destino: Rio de Janeiro, Distância: 345 km</div>`)[0];
+            popup_4fe989ddfa4ac7ff686c2da4ed77844f.setContent(html_e977f093cccf4b0b1c97ddb9142915b8);
+        
+
+        circle_marker_911ec8894cc501e392ff39e8fd181720.bindPopup(popup_4fe989ddfa4ac7ff686c2da4ed77844f)
+        ;
+
+        
+    
+    
+            var circle_marker_cfd60fe966ea76d7854f355789dc313a = L.circleMarker(
+                [-22.9485, -43.3436],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_8746386f563a85a6d3983b5022ac9fc4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_606845b85ee99617998020e1a37d5a8d = $(`<div id="html_606845b85ee99617998020e1a37d5a8d" style="width: 100.0%; height: 100.0%;">Cidade Origem: São Paulo, Distância: 345 km</div>`)[0];
+            popup_8746386f563a85a6d3983b5022ac9fc4.setContent(html_606845b85ee99617998020e1a37d5a8d);
+        
+
+        circle_marker_cfd60fe966ea76d7854f355789dc313a.bindPopup(popup_8746386f563a85a6d3983b5022ac9fc4)
+        ;
+
+        
+    
+    
+            var circle_marker_b6cd9be88084345861a25d15443f2f55 = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_c983271ac8871354d680e68ac55867e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16e800d23cde4fa1abc6307ba1f4c50f = $(`<div id="html_16e800d23cde4fa1abc6307ba1f4c50f" style="width: 100.0%; height: 100.0%;">Cidade Destino: São Paulo, Distância: 345 km</div>`)[0];
+            popup_c983271ac8871354d680e68ac55867e7.setContent(html_16e800d23cde4fa1abc6307ba1f4c50f);
+        
+
+        circle_marker_b6cd9be88084345861a25d15443f2f55.bindPopup(popup_c983271ac8871354d680e68ac55867e7)
+        ;
+
+        
+    
+    
+            var circle_marker_238a363f669e61f0f586e4f0aafef3d5 = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_464245b2090c9b2f8e54a037ef50d8e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd970e21cfbaebca2bee38e018ddbaa3 = $(`<div id="html_cd970e21cfbaebca2bee38e018ddbaa3" style="width: 100.0%; height: 100.0%;">Cidade Origem: Atenas, Distância: 10034 km</div>`)[0];
+            popup_464245b2090c9b2f8e54a037ef50d8e5.setContent(html_cd970e21cfbaebca2bee38e018ddbaa3);
+        
+
+        circle_marker_238a363f669e61f0f586e4f0aafef3d5.bindPopup(popup_464245b2090c9b2f8e54a037ef50d8e5)
+        ;
+
+        
+    
+    
+            var circle_marker_e4cd49fd01046967e484c0b29438f5c1 = L.circleMarker(
+                [37.9842, 23.7353],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_84d3ea5a682f4f301c9caba6b50a4b0e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f6bf417f8c50b6537540df0eaf49a707 = $(`<div id="html_f6bf417f8c50b6537540df0eaf49a707" style="width: 100.0%; height: 100.0%;">Cidade Destino: Atenas, Distância: 10034 km</div>`)[0];
+            popup_84d3ea5a682f4f301c9caba6b50a4b0e.setContent(html_f6bf417f8c50b6537540df0eaf49a707);
+        
+
+        circle_marker_e4cd49fd01046967e484c0b29438f5c1.bindPopup(popup_84d3ea5a682f4f301c9caba6b50a4b0e)
+        ;
+
+        
+    
+    
+            var circle_marker_fb1ace9ae376f67df2dadce35855f951 = L.circleMarker(
+                [37.9842, 23.7353],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_95da7dc5bea35178c0cf4bd0b11d1b1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ccebe1d3af92c5736dd72eb35ec3d50 = $(`<div id="html_5ccebe1d3af92c5736dd72eb35ec3d50" style="width: 100.0%; height: 100.0%;">Cidade Origem: Caceres, Distância: 10372 km</div>`)[0];
+            popup_95da7dc5bea35178c0cf4bd0b11d1b1c.setContent(html_5ccebe1d3af92c5736dd72eb35ec3d50);
+        
+
+        circle_marker_fb1ace9ae376f67df2dadce35855f951.bindPopup(popup_95da7dc5bea35178c0cf4bd0b11d1b1c)
+        ;
+
+        
+    
+    
+            var circle_marker_c67a6f3e6cd037d816e9126261410723 = L.circleMarker(
+                [-16.0696, -57.6794],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_ef9ba6a8d20311eab80a2255b8749114 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2847dfd5eaa1940c9f012cae338d0000 = $(`<div id="html_2847dfd5eaa1940c9f012cae338d0000" style="width: 100.0%; height: 100.0%;">Cidade Destino: Caceres, Distância: 10372 km</div>`)[0];
+            popup_ef9ba6a8d20311eab80a2255b8749114.setContent(html_2847dfd5eaa1940c9f012cae338d0000);
+        
+
+        circle_marker_c67a6f3e6cd037d816e9126261410723.bindPopup(popup_ef9ba6a8d20311eab80a2255b8749114)
+        ;
+
+        
+    
+    
+            var circle_marker_8da8bc3947505e1f7fe70af7f2110b4c = L.circleMarker(
+                [-16.0696, -57.6794],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_cf3c5fdb60a4ce5cae9385a1e78cf35b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d8aec777ed75b40b886d26d30ad2653 = $(`<div id="html_0d8aec777ed75b40b886d26d30ad2653" style="width: 100.0%; height: 100.0%;">Cidade Origem: Atenas, Distância: 10372 km</div>`)[0];
+            popup_cf3c5fdb60a4ce5cae9385a1e78cf35b.setContent(html_0d8aec777ed75b40b886d26d30ad2653);
+        
+
+        circle_marker_8da8bc3947505e1f7fe70af7f2110b4c.bindPopup(popup_cf3c5fdb60a4ce5cae9385a1e78cf35b)
+        ;
+
+        
+    
+    
+            var circle_marker_74a077d689067b5d9e180f97ecb14cf2 = L.circleMarker(
+                [37.9842, 23.7353],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_5da55d842a08f362287080b88d881fdc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ba814aae7de0164f1715a5eb6ee9860 = $(`<div id="html_5ba814aae7de0164f1715a5eb6ee9860" style="width: 100.0%; height: 100.0%;">Cidade Destino: Atenas, Distância: 10372 km</div>`)[0];
+            popup_5da55d842a08f362287080b88d881fdc.setContent(html_5ba814aae7de0164f1715a5eb6ee9860);
+        
+
+        circle_marker_74a077d689067b5d9e180f97ecb14cf2.bindPopup(popup_5da55d842a08f362287080b88d881fdc)
+        ;
+
+        
+    
+    
+            var circle_marker_f0fdcc1bdb6f519a21e42242efde3807 = L.circleMarker(
+                [37.9842, 23.7353],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_8c258fefa1db4ed6a9717a0ff2fd425f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b45d30de359bd4b7272c1b88554a5860 = $(`<div id="html_b45d30de359bd4b7272c1b88554a5860" style="width: 100.0%; height: 100.0%;">Cidade Origem: Neápoli Spáton, Distância: 2 km</div>`)[0];
+            popup_8c258fefa1db4ed6a9717a0ff2fd425f.setContent(html_b45d30de359bd4b7272c1b88554a5860);
+        
+
+        circle_marker_f0fdcc1bdb6f519a21e42242efde3807.bindPopup(popup_8c258fefa1db4ed6a9717a0ff2fd425f)
+        ;
+
+        
+    
+    
+            var circle_marker_d86033e88ebcf7790af6a5563735295a = L.circleMarker(
+                [37.9667, 23.7167],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_0a781173c7977403d0c057f29d0d6442 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13919aa171e4bf37c0d549d2592d9492 = $(`<div id="html_13919aa171e4bf37c0d549d2592d9492" style="width: 100.0%; height: 100.0%;">Cidade Destino: Neápoli Spáton, Distância: 2 km</div>`)[0];
+            popup_0a781173c7977403d0c057f29d0d6442.setContent(html_13919aa171e4bf37c0d549d2592d9492);
+        
+
+        circle_marker_d86033e88ebcf7790af6a5563735295a.bindPopup(popup_0a781173c7977403d0c057f29d0d6442)
+        ;
+
+        
+    
+    
+            var circle_marker_a6764f05ccfe5fb5c90281e953e88359 = L.circleMarker(
+                [37.9667, 23.7167],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_f34332718742a3344597d13b1054642f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40a1e7dd0be25e8f69c4176433522b78 = $(`<div id="html_40a1e7dd0be25e8f69c4176433522b78" style="width: 100.0%; height: 100.0%;">Cidade Origem: São Paulo, Distância: 10031 km</div>`)[0];
+            popup_f34332718742a3344597d13b1054642f.setContent(html_40a1e7dd0be25e8f69c4176433522b78);
+        
+
+        circle_marker_a6764f05ccfe5fb5c90281e953e88359.bindPopup(popup_f34332718742a3344597d13b1054642f)
+        ;
+
+        
+    
+    
+            var circle_marker_8fb48ae554897d2eb01645163e9bf528 = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_4e762d8fe63ca38587e15ccf4d62b132 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ecb771eb93dfd98de0aeace29d74104a = $(`<div id="html_ecb771eb93dfd98de0aeace29d74104a" style="width: 100.0%; height: 100.0%;">Cidade Destino: São Paulo, Distância: 10031 km</div>`)[0];
+            popup_4e762d8fe63ca38587e15ccf4d62b132.setContent(html_ecb771eb93dfd98de0aeace29d74104a);
+        
+
+        circle_marker_8fb48ae554897d2eb01645163e9bf528.bindPopup(popup_4e762d8fe63ca38587e15ccf4d62b132)
+        ;
+
+        
+    
+    
+            var circle_marker_baef7bd014ae86834dc8f2ac0d365ab8 = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_f8501702cc5346d24116bbaf2e946398 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5cc203e49f96178f51b5791388b71ce6 = $(`<div id="html_5cc203e49f96178f51b5791388b71ce6" style="width: 100.0%; height: 100.0%;">Cidade Origem: Rio de Janeiro, Distância: 345 km</div>`)[0];
+            popup_f8501702cc5346d24116bbaf2e946398.setContent(html_5cc203e49f96178f51b5791388b71ce6);
+        
+
+        circle_marker_baef7bd014ae86834dc8f2ac0d365ab8.bindPopup(popup_f8501702cc5346d24116bbaf2e946398)
+        ;
+
+        
+    
+    
+            var circle_marker_c708e1e3b30d6b9cbe00334b1bb042c2 = L.circleMarker(
+                [-22.9485, -43.3436],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_107d3e4519e24e95b4be0417be680c87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a241902b3d824153813636e46469093 = $(`<div id="html_1a241902b3d824153813636e46469093" style="width: 100.0%; height: 100.0%;">Cidade Destino: Rio de Janeiro, Distância: 345 km</div>`)[0];
+            popup_107d3e4519e24e95b4be0417be680c87.setContent(html_1a241902b3d824153813636e46469093);
+        
+
+        circle_marker_c708e1e3b30d6b9cbe00334b1bb042c2.bindPopup(popup_107d3e4519e24e95b4be0417be680c87)
+        ;
+
+        
+    
+    
+            var circle_marker_1e4540629dad881c38d0ed5465d52532 = L.circleMarker(
+                [-22.9485, -43.3436],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_7e60342ec6cb13fd696e085c523d8365 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dadd71229d915be1b596066ae0955ff2 = $(`<div id="html_dadd71229d915be1b596066ae0955ff2" style="width: 100.0%; height: 100.0%;">Cidade Origem: São Paulo, Distância: 345 km</div>`)[0];
+            popup_7e60342ec6cb13fd696e085c523d8365.setContent(html_dadd71229d915be1b596066ae0955ff2);
+        
+
+        circle_marker_1e4540629dad881c38d0ed5465d52532.bindPopup(popup_7e60342ec6cb13fd696e085c523d8365)
+        ;
+
+        
+    
+    
+            var circle_marker_0f21c5a71a7ac8dffb5a8c110c1e8fda = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 34, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_dc18db18e58a18ac81e45f357e3e2343 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a98df901cf9728982b11d87bc586933 = $(`<div id="html_9a98df901cf9728982b11d87bc586933" style="width: 100.0%; height: 100.0%;">Cidade Destino: São Paulo, Distância: 345 km</div>`)[0];
+            popup_dc18db18e58a18ac81e45f357e3e2343.setContent(html_9a98df901cf9728982b11d87bc586933);
+        
+
+        circle_marker_0f21c5a71a7ac8dffb5a8c110c1e8fda.bindPopup(popup_dc18db18e58a18ac81e45f357e3e2343)
+        ;
+
+        
+    
+    
+            var circle_marker_e782e7bbc5a7d3125237326811d13824 = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 36, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_759ce080a194ac0b41d5c3ae50a59376 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4327a00dd6d5a98d707f552e1c657882 = $(`<div id="html_4327a00dd6d5a98d707f552e1c657882" style="width: 100.0%; height: 100.0%;">Cidade Origem: Belém, Distância: 360 km</div>`)[0];
+            popup_759ce080a194ac0b41d5c3ae50a59376.setContent(html_4327a00dd6d5a98d707f552e1c657882);
+        
+
+        circle_marker_e782e7bbc5a7d3125237326811d13824.bindPopup(popup_759ce080a194ac0b41d5c3ae50a59376)
+        ;
+
+        
+    
+    
+            var circle_marker_726fd7418ecb7f3f8d18a6d16ca16336 = L.circleMarker(
+                [-22.8305, -43.2192],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_a4c09e81538c8e3d0a22c70aae5c15fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_141e9c85c413a23fa648bc9d2c7db4ea = $(`<div id="html_141e9c85c413a23fa648bc9d2c7db4ea" style="width: 100.0%; height: 100.0%;">Cidade Destino: Belém, Distância: 360 km</div>`)[0];
+            popup_a4c09e81538c8e3d0a22c70aae5c15fc.setContent(html_141e9c85c413a23fa648bc9d2c7db4ea);
+        
+
+        circle_marker_726fd7418ecb7f3f8d18a6d16ca16336.bindPopup(popup_a4c09e81538c8e3d0a22c70aae5c15fc)
+        ;
+
+        
+    
+    
+            var circle_marker_7aefa7d4f712c9354032451b67a27e2a = L.circleMarker(
+                [-22.8305, -43.2192],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_d5914694680aad025452a439f0d5ce8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_076b29012922e0027c8d2f777a839da7 = $(`<div id="html_076b29012922e0027c8d2f777a839da7" style="width: 100.0%; height: 100.0%;">Cidade Origem: Rio de Janeiro, Distância: 18 km</div>`)[0];
+            popup_d5914694680aad025452a439f0d5ce8c.setContent(html_076b29012922e0027c8d2f777a839da7);
+        
+
+        circle_marker_7aefa7d4f712c9354032451b67a27e2a.bindPopup(popup_d5914694680aad025452a439f0d5ce8c)
+        ;
+
+        
+    
+    
+            var circle_marker_dce5d0b07da094ad779b6cd536663a1b = L.circleMarker(
+                [-22.9485, -43.3436],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_5e8d46a1cff1b3d1296df54f64b3e437 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c70486b782c1f1d432a6496041d6f8c2 = $(`<div id="html_c70486b782c1f1d432a6496041d6f8c2" style="width: 100.0%; height: 100.0%;">Cidade Destino: Rio de Janeiro, Distância: 18 km</div>`)[0];
+            popup_5e8d46a1cff1b3d1296df54f64b3e437.setContent(html_c70486b782c1f1d432a6496041d6f8c2);
+        
+
+        circle_marker_dce5d0b07da094ad779b6cd536663a1b.bindPopup(popup_5e8d46a1cff1b3d1296df54f64b3e437)
+        ;
+
+        
+    
+    
+            var circle_marker_ae73857775d145152fbcc7df76d399f6 = L.circleMarker(
+                [-22.9485, -43.3436],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_0e609bec8c7e97a8b3469208587003bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6f048b07f7b2cf15b8e192b157c5227 = $(`<div id="html_a6f048b07f7b2cf15b8e192b157c5227" style="width: 100.0%; height: 100.0%;">Cidade Origem: Porto Alegre, Distância: 1108 km</div>`)[0];
+            popup_0e609bec8c7e97a8b3469208587003bf.setContent(html_a6f048b07f7b2cf15b8e192b157c5227);
+        
+
+        circle_marker_ae73857775d145152fbcc7df76d399f6.bindPopup(popup_0e609bec8c7e97a8b3469208587003bf)
+        ;
+
+        
+    
+    
+            var circle_marker_941307713d290357142fc19aa9c4066f = L.circleMarker(
+                [-30.0269, -51.2005],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_5eeedcc5e7bc10cd00235a732f077640 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b20b0ef1d3414dc10e4fad61eafdc89e = $(`<div id="html_b20b0ef1d3414dc10e4fad61eafdc89e" style="width: 100.0%; height: 100.0%;">Cidade Destino: Porto Alegre, Distância: 1108 km</div>`)[0];
+            popup_5eeedcc5e7bc10cd00235a732f077640.setContent(html_b20b0ef1d3414dc10e4fad61eafdc89e);
+        
+
+        circle_marker_941307713d290357142fc19aa9c4066f.bindPopup(popup_5eeedcc5e7bc10cd00235a732f077640)
+        ;
+
+        
+    
+    
+            var circle_marker_d42303d79f5f645c66e91f6149f87abd = L.circleMarker(
+                [-30.0269, -51.2005],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_bf78ceb509666a2ff5674e07e643c721 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3b75a293888ad4d2cdda3af5a69ace2 = $(`<div id="html_c3b75a293888ad4d2cdda3af5a69ace2" style="width: 100.0%; height: 100.0%;">Cidade Origem: Iron Mountain, Distância: 8959 km</div>`)[0];
+            popup_bf78ceb509666a2ff5674e07e643c721.setContent(html_c3b75a293888ad4d2cdda3af5a69ace2);
+        
+
+        circle_marker_d42303d79f5f645c66e91f6149f87abd.bindPopup(popup_bf78ceb509666a2ff5674e07e643c721)
+        ;
+
+        
+    
+    
+            var circle_marker_811e1ca9a78c69ac0bf0c80e915a3aca = L.circleMarker(
+                [37.751, -97.822],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_10b1fb7fba671245ce4933e66538e63f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d14d6ce78bb5a2e3786937ff12eabb83 = $(`<div id="html_d14d6ce78bb5a2e3786937ff12eabb83" style="width: 100.0%; height: 100.0%;">Cidade Destino: Iron Mountain, Distância: 8959 km</div>`)[0];
+            popup_10b1fb7fba671245ce4933e66538e63f.setContent(html_d14d6ce78bb5a2e3786937ff12eabb83);
+        
+
+        circle_marker_811e1ca9a78c69ac0bf0c80e915a3aca.bindPopup(popup_10b1fb7fba671245ce4933e66538e63f)
+        ;
+
+        
+    
+    
+            var circle_marker_bf32989a39083ef22c7400a1f515a25c = L.circleMarker(
+                [37.751, -97.822],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_66d68f5c39e21ed6841dc617dc817197 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d48be547ac003f4574c48afd2873d187 = $(`<div id="html_d48be547ac003f4574c48afd2873d187" style="width: 100.0%; height: 100.0%;">Cidade Origem: Orlando, Distância: 1830 km</div>`)[0];
+            popup_66d68f5c39e21ed6841dc617dc817197.setContent(html_d48be547ac003f4574c48afd2873d187);
+        
+
+        circle_marker_bf32989a39083ef22c7400a1f515a25c.bindPopup(popup_66d68f5c39e21ed6841dc617dc817197)
+        ;
+
+        
+    
+    
+            var circle_marker_6daca390106c15b5b76557322fd55d26 = L.circleMarker(
+                [28.5788, -81.4396],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_1f1f711323c29b5f6b6a761bd1e2ca4f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba0108b78eeb2f2020c512a46cad7b68 = $(`<div id="html_ba0108b78eeb2f2020c512a46cad7b68" style="width: 100.0%; height: 100.0%;">Cidade Destino: Orlando, Distância: 1830 km</div>`)[0];
+            popup_1f1f711323c29b5f6b6a761bd1e2ca4f.setContent(html_ba0108b78eeb2f2020c512a46cad7b68);
+        
+
+        circle_marker_6daca390106c15b5b76557322fd55d26.bindPopup(popup_1f1f711323c29b5f6b6a761bd1e2ca4f)
+        ;
+
+        
+    
+    
+            var circle_marker_c1e8e08829f057b8ca4412470ce30f8e = L.circleMarker(
+                [28.5788, -81.4396],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_a923902805aee5f03a7ba9ce1597d8d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0673fbf7530e8ec3d6fed0109005dfd0 = $(`<div id="html_0673fbf7530e8ec3d6fed0109005dfd0" style="width: 100.0%; height: 100.0%;">Cidade Origem: Iron Mountain, Distância: 1830 km</div>`)[0];
+            popup_a923902805aee5f03a7ba9ce1597d8d7.setContent(html_0673fbf7530e8ec3d6fed0109005dfd0);
+        
+
+        circle_marker_c1e8e08829f057b8ca4412470ce30f8e.bindPopup(popup_a923902805aee5f03a7ba9ce1597d8d7)
+        ;
+
+        
+    
+    
+            var circle_marker_5c467bcbb3b1ac36d98ac179a545a31e = L.circleMarker(
+                [37.751, -97.822],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_4b37029605493e0244ad4a2c58f9e91e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44a1a16bf6108f15a6b5c7986b0e81b6 = $(`<div id="html_44a1a16bf6108f15a6b5c7986b0e81b6" style="width: 100.0%; height: 100.0%;">Cidade Destino: Iron Mountain, Distância: 1830 km</div>`)[0];
+            popup_4b37029605493e0244ad4a2c58f9e91e.setContent(html_44a1a16bf6108f15a6b5c7986b0e81b6);
+        
+
+        circle_marker_5c467bcbb3b1ac36d98ac179a545a31e.bindPopup(popup_4b37029605493e0244ad4a2c58f9e91e)
+        ;
+
+        
+    
+    
+            var circle_marker_1c3b6498d03518620a6b7e240fd0eed4 = L.circleMarker(
+                [37.751, -97.822],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_02e2151f8d65aade38cf5d01f0263051 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a76702908706a75bb0a42308e3461b52 = $(`<div id="html_a76702908706a75bb0a42308e3461b52" style="width: 100.0%; height: 100.0%;">Cidade Origem: San Francisco, Distância: 1812 km</div>`)[0];
+            popup_02e2151f8d65aade38cf5d01f0263051.setContent(html_a76702908706a75bb0a42308e3461b52);
+        
+
+        circle_marker_1c3b6498d03518620a6b7e240fd0eed4.bindPopup(popup_02e2151f8d65aade38cf5d01f0263051)
+        ;
+
+        
+    
+    
+            var circle_marker_6fb0c5056eeea61d1adf72d556087ab6 = L.circleMarker(
+                [28.6344, -81.6221],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_21df312bb4cc4e9b5991ad3e130804e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f0cc16a7c0e7a123c3f328daed77f11a = $(`<div id="html_f0cc16a7c0e7a123c3f328daed77f11a" style="width: 100.0%; height: 100.0%;">Cidade Destino: San Francisco, Distância: 1812 km</div>`)[0];
+            popup_21df312bb4cc4e9b5991ad3e130804e6.setContent(html_f0cc16a7c0e7a123c3f328daed77f11a);
+        
+
+        circle_marker_6fb0c5056eeea61d1adf72d556087ab6.bindPopup(popup_21df312bb4cc4e9b5991ad3e130804e6)
+        ;
+
+        
+    
+    
+            var circle_marker_c3dc05738b5a000923aec72e505d3ce3 = L.circleMarker(
+                [28.6344, -81.6221],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_07639532e992cec931a845c8a28338cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4fc00479c8c1d9f0123f6ed574584d66 = $(`<div id="html_4fc00479c8c1d9f0123f6ed574584d66" style="width: 100.0%; height: 100.0%;">Cidade Origem: Iron Mountain, Distância: 1812 km</div>`)[0];
+            popup_07639532e992cec931a845c8a28338cc.setContent(html_4fc00479c8c1d9f0123f6ed574584d66);
+        
+
+        circle_marker_c3dc05738b5a000923aec72e505d3ce3.bindPopup(popup_07639532e992cec931a845c8a28338cc)
+        ;
+
+        
+    
+    
+            var circle_marker_c5c8c48a070230362faf9665d34c81f8 = L.circleMarker(
+                [37.751, -97.822],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_0ff52c18a4da116711d2684199517481 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f7bc5eb08cc0c7921da314170f0cf67 = $(`<div id="html_0f7bc5eb08cc0c7921da314170f0cf67" style="width: 100.0%; height: 100.0%;">Cidade Destino: Iron Mountain, Distância: 1812 km</div>`)[0];
+            popup_0ff52c18a4da116711d2684199517481.setContent(html_0f7bc5eb08cc0c7921da314170f0cf67);
+        
+
+        circle_marker_c5c8c48a070230362faf9665d34c81f8.bindPopup(popup_0ff52c18a4da116711d2684199517481)
+        ;
+
+        
+    
+    
+            var circle_marker_ec2399d3e905ea660215615ec84343a1 = L.circleMarker(
+                [37.751, -97.822],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_c760511859bfe07e80c67b3d35042bae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2cff7afa3f4ce948bcc69a27117edfb1 = $(`<div id="html_2cff7afa3f4ce948bcc69a27117edfb1" style="width: 100.0%; height: 100.0%;">Cidade Origem: São Paulo, Distância: 8668 km</div>`)[0];
+            popup_c760511859bfe07e80c67b3d35042bae.setContent(html_2cff7afa3f4ce948bcc69a27117edfb1);
+        
+
+        circle_marker_ec2399d3e905ea660215615ec84343a1.bindPopup(popup_c760511859bfe07e80c67b3d35042bae)
+        ;
+
+        
+    
+    
+            var circle_marker_d793ab557ed7b2ad5e39acefd1bdc748 = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 38, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_5442de09d71bbe7e3be34f5ce707c5f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0bc9fdaa88b6c0154c503c10a588c6a = $(`<div id="html_a0bc9fdaa88b6c0154c503c10a588c6a" style="width: 100.0%; height: 100.0%;">Cidade Destino: São Paulo, Distância: 8668 km</div>`)[0];
+            popup_5442de09d71bbe7e3be34f5ce707c5f5.setContent(html_a0bc9fdaa88b6c0154c503c10a588c6a);
+        
+
+        circle_marker_d793ab557ed7b2ad5e39acefd1bdc748.bindPopup(popup_5442de09d71bbe7e3be34f5ce707c5f5)
+        ;
+
+        
+    
+    
+            var circle_marker_95f83ea1fa08b397a170706954329606 = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 40, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_d927d48ea97068305318b17c14f5ee49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_068d278df41ddcfd7b3cddbbd4b38101 = $(`<div id="html_068d278df41ddcfd7b3cddbbd4b38101" style="width: 100.0%; height: 100.0%;">Cidade Origem: Iron Mountain, Distância: 8668 km</div>`)[0];
+            popup_d927d48ea97068305318b17c14f5ee49.setContent(html_068d278df41ddcfd7b3cddbbd4b38101);
+        
+
+        circle_marker_95f83ea1fa08b397a170706954329606.bindPopup(popup_d927d48ea97068305318b17c14f5ee49)
+        ;
+
+        
+    
+    
+            var circle_marker_1ec08cbe760f6476b2e71509e066c4be = L.circleMarker(
+                [37.751, -97.822],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_3ae86b1100ba8e08c651260f1365b331 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8116c387cc008351116e950ffe852728 = $(`<div id="html_8116c387cc008351116e950ffe852728" style="width: 100.0%; height: 100.0%;">Cidade Destino: Iron Mountain, Distância: 8668 km</div>`)[0];
+            popup_3ae86b1100ba8e08c651260f1365b331.setContent(html_8116c387cc008351116e950ffe852728);
+        
+
+        circle_marker_1ec08cbe760f6476b2e71509e066c4be.bindPopup(popup_3ae86b1100ba8e08c651260f1365b331)
+        ;
+
+        
+    
+    
+            var circle_marker_daaaf6823746bf62c1852012bdb23b72 = L.circleMarker(
+                [37.751, -97.822],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_079c92f3cd475ef82a06fea61cf1695a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36cb65bd56e1c9b222ea5c0176916770 = $(`<div id="html_36cb65bd56e1c9b222ea5c0176916770" style="width: 100.0%; height: 100.0%;">Cidade Origem: São Paulo, Distância: 8668 km</div>`)[0];
+            popup_079c92f3cd475ef82a06fea61cf1695a.setContent(html_36cb65bd56e1c9b222ea5c0176916770);
+        
+
+        circle_marker_daaaf6823746bf62c1852012bdb23b72.bindPopup(popup_079c92f3cd475ef82a06fea61cf1695a)
+        ;
+
+        
+    
+    
+            var circle_marker_ca47240380fecc2354cb9f5545658801 = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 42, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_e5777568f3e3c314b70fc5fcbbfc8d47 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b04a6c71ee6840821d12c28779e242cb = $(`<div id="html_b04a6c71ee6840821d12c28779e242cb" style="width: 100.0%; height: 100.0%;">Cidade Destino: São Paulo, Distância: 8668 km</div>`)[0];
+            popup_e5777568f3e3c314b70fc5fcbbfc8d47.setContent(html_b04a6c71ee6840821d12c28779e242cb);
+        
+
+        circle_marker_ca47240380fecc2354cb9f5545658801.bindPopup(popup_e5777568f3e3c314b70fc5fcbbfc8d47)
+        ;
+
+        
+    
+    
+            var circle_marker_ecdfc210af6c68403658e907a3a71d67 = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 44, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_d008b45b31b91a6a6077324a02784b0f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76348253e83004c997a8a696e1860dd3 = $(`<div id="html_76348253e83004c997a8a696e1860dd3" style="width: 100.0%; height: 100.0%;">Cidade Origem: Iron Mountain, Distância: 8668 km</div>`)[0];
+            popup_d008b45b31b91a6a6077324a02784b0f.setContent(html_76348253e83004c997a8a696e1860dd3);
+        
+
+        circle_marker_ecdfc210af6c68403658e907a3a71d67.bindPopup(popup_d008b45b31b91a6a6077324a02784b0f)
+        ;
+
+        
+    
+    
+            var circle_marker_8b6b6bff7d290d46b0f78d4771963e02 = L.circleMarker(
+                [37.751, -97.822],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_1730de3636d5496fb27ddcc2641c7198 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93bd2a79a4944eabf444acfb8063ebbd = $(`<div id="html_93bd2a79a4944eabf444acfb8063ebbd" style="width: 100.0%; height: 100.0%;">Cidade Destino: Iron Mountain, Distância: 8668 km</div>`)[0];
+            popup_1730de3636d5496fb27ddcc2641c7198.setContent(html_93bd2a79a4944eabf444acfb8063ebbd);
+        
+
+        circle_marker_8b6b6bff7d290d46b0f78d4771963e02.bindPopup(popup_1730de3636d5496fb27ddcc2641c7198)
+        ;
+
+        
+    
+    
+            var circle_marker_50f0a6c904d6eb5a2a747197905a935f = L.circleMarker(
+                [37.751, -97.822],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_2b8d431c79e479e683ff4b6365285205 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88e682c59fc459443020f790cc9ab72d = $(`<div id="html_88e682c59fc459443020f790cc9ab72d" style="width: 100.0%; height: 100.0%;">Cidade Origem: São Paulo, Distância: 8668 km</div>`)[0];
+            popup_2b8d431c79e479e683ff4b6365285205.setContent(html_88e682c59fc459443020f790cc9ab72d);
+        
+
+        circle_marker_50f0a6c904d6eb5a2a747197905a935f.bindPopup(popup_2b8d431c79e479e683ff4b6365285205)
+        ;
+
+        
+    
+    
+            var circle_marker_2345152fea804c9528cc5a999b47b018 = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 46, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_a3251d1f63eea6e3e705f3d3ffd0adf9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c821912a7133de7b12c39c9a4ede3176 = $(`<div id="html_c821912a7133de7b12c39c9a4ede3176" style="width: 100.0%; height: 100.0%;">Cidade Destino: São Paulo, Distância: 8668 km</div>`)[0];
+            popup_a3251d1f63eea6e3e705f3d3ffd0adf9.setContent(html_c821912a7133de7b12c39c9a4ede3176);
+        
+
+        circle_marker_2345152fea804c9528cc5a999b47b018.bindPopup(popup_a3251d1f63eea6e3e705f3d3ffd0adf9)
+        ;
+
+        
+    
+    
+            var circle_marker_07b0cf65bcc14ea1f5d73d1821a25bc2 = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 48, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_d8e276297edfd72c0199156a36532af8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eec1bea982cc91e45cf66fbdeb1bf78c = $(`<div id="html_eec1bea982cc91e45cf66fbdeb1bf78c" style="width: 100.0%; height: 100.0%;">Cidade Origem: Iron Mountain, Distância: 8668 km</div>`)[0];
+            popup_d8e276297edfd72c0199156a36532af8.setContent(html_eec1bea982cc91e45cf66fbdeb1bf78c);
+        
+
+        circle_marker_07b0cf65bcc14ea1f5d73d1821a25bc2.bindPopup(popup_d8e276297edfd72c0199156a36532af8)
+        ;
+
+        
+    
+    
+            var circle_marker_24c944286f590fa176df14a3b520e19b = L.circleMarker(
+                [37.751, -97.822],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_9cb71f3a4e372eadf61d834d8f39c13e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee39c123904a8e1d979d53068d62b8f8 = $(`<div id="html_ee39c123904a8e1d979d53068d62b8f8" style="width: 100.0%; height: 100.0%;">Cidade Destino: Iron Mountain, Distância: 8668 km</div>`)[0];
+            popup_9cb71f3a4e372eadf61d834d8f39c13e.setContent(html_ee39c123904a8e1d979d53068d62b8f8);
+        
+
+        circle_marker_24c944286f590fa176df14a3b520e19b.bindPopup(popup_9cb71f3a4e372eadf61d834d8f39c13e)
+        ;
+
+        
+    
+    
+            var circle_marker_a899232eb32d115cf3a8afeda6dca620 = L.circleMarker(
+                [37.751, -97.822],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_c403b0b9e2bbf731b1210fb0db80fe8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_645817252df7a71b21418263b2219bad = $(`<div id="html_645817252df7a71b21418263b2219bad" style="width: 100.0%; height: 100.0%;">Cidade Origem: Orlando, Distância: 1847 km</div>`)[0];
+            popup_c403b0b9e2bbf731b1210fb0db80fe8b.setContent(html_645817252df7a71b21418263b2219bad);
+        
+
+        circle_marker_a899232eb32d115cf3a8afeda6dca620.bindPopup(popup_c403b0b9e2bbf731b1210fb0db80fe8b)
+        ;
+
+        
+    
+    
+            var circle_marker_3edb3b1b02d511e09ce5eb592048fbf1 = L.circleMarker(
+                [28.4932, -81.2878],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_cddcf07c22639e9c2562fdb0ac4e6907 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0b807ee2be63f8068f5a57d666a03e9 = $(`<div id="html_e0b807ee2be63f8068f5a57d666a03e9" style="width: 100.0%; height: 100.0%;">Cidade Destino: Orlando, Distância: 1847 km</div>`)[0];
+            popup_cddcf07c22639e9c2562fdb0ac4e6907.setContent(html_e0b807ee2be63f8068f5a57d666a03e9);
+        
+
+        circle_marker_3edb3b1b02d511e09ce5eb592048fbf1.bindPopup(popup_cddcf07c22639e9c2562fdb0ac4e6907)
+        ;
+
+        
+    
+    
+            var circle_marker_afb0704ce6f9ca5b19f610539b123a1c = L.circleMarker(
+                [28.4932, -81.2878],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_6c3b2c16d9d2a5814993003882194113 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae5b469a03ba3a11169b5966d1e73c8f = $(`<div id="html_ae5b469a03ba3a11169b5966d1e73c8f" style="width: 100.0%; height: 100.0%;">Cidade Origem: Nova Iorque, Distância: 1515 km</div>`)[0];
+            popup_6c3b2c16d9d2a5814993003882194113.setContent(html_ae5b469a03ba3a11169b5966d1e73c8f);
+        
+
+        circle_marker_afb0704ce6f9ca5b19f610539b123a1c.bindPopup(popup_6c3b2c16d9d2a5814993003882194113)
+        ;
+
+        
+    
+    
+            var circle_marker_d986238deff999a6626f502aa3f31836 = L.circleMarker(
+                [40.738, -73.9858],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_acee9b773e40997fe479cdfdfe8c3a7e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f04c8d492bb82bc7a389b6be593aecaf = $(`<div id="html_f04c8d492bb82bc7a389b6be593aecaf" style="width: 100.0%; height: 100.0%;">Cidade Destino: Nova Iorque, Distância: 1515 km</div>`)[0];
+            popup_acee9b773e40997fe479cdfdfe8c3a7e.setContent(html_f04c8d492bb82bc7a389b6be593aecaf);
+        
+
+        circle_marker_d986238deff999a6626f502aa3f31836.bindPopup(popup_acee9b773e40997fe479cdfdfe8c3a7e)
+        ;
+
+        
+    
+    
+            var circle_marker_11fa638c89dbdc53c3c23eb4bc7a4c7a = L.circleMarker(
+                [40.738, -73.9858],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_47419ec30d1ba850a3a387d017234894 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9135182f3e3eec4c3b814d87b99a9aab = $(`<div id="html_9135182f3e3eec4c3b814d87b99a9aab" style="width: 100.0%; height: 100.0%;">Cidade Origem: Cranbury, Distância: 65 km</div>`)[0];
+            popup_47419ec30d1ba850a3a387d017234894.setContent(html_9135182f3e3eec4c3b814d87b99a9aab);
+        
+
+        circle_marker_11fa638c89dbdc53c3c23eb4bc7a4c7a.bindPopup(popup_47419ec30d1ba850a3a387d017234894)
+        ;
+
+        
+    
+    
+            var circle_marker_4f682b2dffd9e373eb85b5beb3a19a6f = L.circleMarker(
+                [40.3015, -74.5027],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_9d762b9c99886e370fb91eb10ae018f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7112a7931d22e6cd6c4a6dbd3f8983f5 = $(`<div id="html_7112a7931d22e6cd6c4a6dbd3f8983f5" style="width: 100.0%; height: 100.0%;">Cidade Destino: Cranbury, Distância: 65 km</div>`)[0];
+            popup_9d762b9c99886e370fb91eb10ae018f9.setContent(html_7112a7931d22e6cd6c4a6dbd3f8983f5);
+        
+
+        circle_marker_4f682b2dffd9e373eb85b5beb3a19a6f.bindPopup(popup_9d762b9c99886e370fb91eb10ae018f9)
+        ;
+
+        
+    
+    
+            var circle_marker_faf364e08d52259201e87fdbf5fe0235 = L.circleMarker(
+                [40.3015, -74.5027],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_d3b7421684a7e23a22e58940d9419799 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a8183a06a5d9e90346e1f29f5dc1410 = $(`<div id="html_0a8183a06a5d9e90346e1f29f5dc1410" style="width: 100.0%; height: 100.0%;">Cidade Origem: Nova Iorque, Distância: 65 km</div>`)[0];
+            popup_d3b7421684a7e23a22e58940d9419799.setContent(html_0a8183a06a5d9e90346e1f29f5dc1410);
+        
+
+        circle_marker_faf364e08d52259201e87fdbf5fe0235.bindPopup(popup_d3b7421684a7e23a22e58940d9419799)
+        ;
+
+        
+    
+    
+            var circle_marker_4f4799ade380b3ab77d3a6e0b0181764 = L.circleMarker(
+                [40.738, -73.9858],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_a8ad9a4d271ab187b565a873bc7b8a00 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9125235683ac0aaad012f6a02ea42400 = $(`<div id="html_9125235683ac0aaad012f6a02ea42400" style="width: 100.0%; height: 100.0%;">Cidade Destino: Nova Iorque, Distância: 65 km</div>`)[0];
+            popup_a8ad9a4d271ab187b565a873bc7b8a00.setContent(html_9125235683ac0aaad012f6a02ea42400);
+        
+
+        circle_marker_4f4799ade380b3ab77d3a6e0b0181764.bindPopup(popup_a8ad9a4d271ab187b565a873bc7b8a00)
+        ;
+
+        
+    
+    
+            var circle_marker_6d53b50f74c6718e83e67e4005bf1f5a = L.circleMarker(
+                [40.7157, -74.0],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_6f49be968b0e348d1bde4485869fae98 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1375be8b13e7d8e7b452a9a53fbc2642 = $(`<div id="html_1375be8b13e7d8e7b452a9a53fbc2642" style="width: 100.0%; height: 100.0%;">Cidade Origem: Canoas, Distância: 8198 km</div>`)[0];
+            popup_6f49be968b0e348d1bde4485869fae98.setContent(html_1375be8b13e7d8e7b452a9a53fbc2642);
+        
+
+        circle_marker_6d53b50f74c6718e83e67e4005bf1f5a.bindPopup(popup_6f49be968b0e348d1bde4485869fae98)
+        ;
+
+        
+    
+    
+            var circle_marker_6793fdb66dcc53f165cb0b0bd8d57956 = L.circleMarker(
+                [-29.9228, -51.1744],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_6b2aa8b0273a856998180c7d635b6968 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b0fa9bf4fe2574a893e23c695f6707c = $(`<div id="html_5b0fa9bf4fe2574a893e23c695f6707c" style="width: 100.0%; height: 100.0%;">Cidade Destino: Canoas, Distância: 8198 km</div>`)[0];
+            popup_6b2aa8b0273a856998180c7d635b6968.setContent(html_5b0fa9bf4fe2574a893e23c695f6707c);
+        
+
+        circle_marker_6793fdb66dcc53f165cb0b0bd8d57956.bindPopup(popup_6b2aa8b0273a856998180c7d635b6968)
+        ;
+
+        
+    
+    
+            var circle_marker_96adedfc8197a44fa6e5471302d363e5 = L.circleMarker(
+                [-29.9228, -51.1744],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_7df5a266c344b1247cfc74f340ce1fc8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe3167554f4f0a5d9742e1f284e0d042 = $(`<div id="html_fe3167554f4f0a5d9742e1f284e0d042" style="width: 100.0%; height: 100.0%;">Cidade Origem: Nova Iorque, Distância: 8200 km</div>`)[0];
+            popup_7df5a266c344b1247cfc74f340ce1fc8.setContent(html_fe3167554f4f0a5d9742e1f284e0d042);
+        
+
+        circle_marker_96adedfc8197a44fa6e5471302d363e5.bindPopup(popup_7df5a266c344b1247cfc74f340ce1fc8)
+        ;
+
+        
+    
+    
+            var circle_marker_f642ce388266bab5c0c4891a31d87192 = L.circleMarker(
+                [40.738, -73.9858],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_ff54194c0846b19ff65f8c20dd6ca036 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c64dfe96d82517e3e32ff62e8a8eb9a6 = $(`<div id="html_c64dfe96d82517e3e32ff62e8a8eb9a6" style="width: 100.0%; height: 100.0%;">Cidade Destino: Nova Iorque, Distância: 8200 km</div>`)[0];
+            popup_ff54194c0846b19ff65f8c20dd6ca036.setContent(html_c64dfe96d82517e3e32ff62e8a8eb9a6);
+        
+
+        circle_marker_f642ce388266bab5c0c4891a31d87192.bindPopup(popup_ff54194c0846b19ff65f8c20dd6ca036)
+        ;
+
+        
+    
+    
+            var circle_marker_036375a3e7ebd2196deb62867ce870b2 = L.circleMarker(
+                [40.738, -73.9858],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_3fbaeaf616f29de2b01cb8a77d926f8f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_067dc00ea4207ae7277e097fe983517e = $(`<div id="html_067dc00ea4207ae7277e097fe983517e" style="width: 100.0%; height: 100.0%;">Cidade Origem: Rio de Janeiro, Distância: 7757 km</div>`)[0];
+            popup_3fbaeaf616f29de2b01cb8a77d926f8f.setContent(html_067dc00ea4207ae7277e097fe983517e);
+        
+
+        circle_marker_036375a3e7ebd2196deb62867ce870b2.bindPopup(popup_3fbaeaf616f29de2b01cb8a77d926f8f)
+        ;
+
+        
+    
+    
+            var circle_marker_922d7c1fd9b3d8e9ef126f26f3c55d86 = L.circleMarker(
+                [-22.9485, -43.3436],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_2edd23d8af13ce92fdf6b05fe47d0c9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7585095e4faeeb5eab4081072000bd21 = $(`<div id="html_7585095e4faeeb5eab4081072000bd21" style="width: 100.0%; height: 100.0%;">Cidade Destino: Rio de Janeiro, Distância: 7757 km</div>`)[0];
+            popup_2edd23d8af13ce92fdf6b05fe47d0c9a.setContent(html_7585095e4faeeb5eab4081072000bd21);
+        
+
+        circle_marker_922d7c1fd9b3d8e9ef126f26f3c55d86.bindPopup(popup_2edd23d8af13ce92fdf6b05fe47d0c9a)
+        ;
+
+        
+    
+    
+            var circle_marker_1404b5796f60c195f121ff8f3f111a91 = L.circleMarker(
+                [-22.9485, -43.3436],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_bcfe07043e14cb72a72c6672faa75b9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5cdf051ad3d990b8c2369b00d54f170 = $(`<div id="html_d5cdf051ad3d990b8c2369b00d54f170" style="width: 100.0%; height: 100.0%;">Cidade Origem: São Paulo, Distância: 345 km</div>`)[0];
+            popup_bcfe07043e14cb72a72c6672faa75b9f.setContent(html_d5cdf051ad3d990b8c2369b00d54f170);
+        
+
+        circle_marker_1404b5796f60c195f121ff8f3f111a91.bindPopup(popup_bcfe07043e14cb72a72c6672faa75b9f)
+        ;
+
+        
+    
+    
+            var circle_marker_58d7a740a4523e47081617b7a92e3bcc = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_7ed81f75aaa8fd6d3f605da09d3074fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d8d18acfe37b50c08495c7ebac706fe = $(`<div id="html_6d8d18acfe37b50c08495c7ebac706fe" style="width: 100.0%; height: 100.0%;">Cidade Destino: São Paulo, Distância: 345 km</div>`)[0];
+            popup_7ed81f75aaa8fd6d3f605da09d3074fd.setContent(html_6d8d18acfe37b50c08495c7ebac706fe);
+        
+
+        circle_marker_58d7a740a4523e47081617b7a92e3bcc.bindPopup(popup_7ed81f75aaa8fd6d3f605da09d3074fd)
+        ;
+
+        
+    
+    
+            var circle_marker_48b669deaeca34a787be2d3067cbe6cb = L.circleMarker(
+                [-23.6283, -46.6409],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 52, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_d14096f17a9f4ca5bd0df3214cbd4f6c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92fa34757093632fa6e3937201f66ced = $(`<div id="html_92fa34757093632fa6e3937201f66ced" style="width: 100.0%; height: 100.0%;">Cidade Origem: Amparo, Distância: 103 km</div>`)[0];
+            popup_d14096f17a9f4ca5bd0df3214cbd4f6c.setContent(html_92fa34757093632fa6e3937201f66ced);
+        
+
+        circle_marker_48b669deaeca34a787be2d3067cbe6cb.bindPopup(popup_d14096f17a9f4ca5bd0df3214cbd4f6c)
+        ;
+
+        
+    
+    
+            var circle_marker_a982a5466e3d182968ded82a51c743e2 = L.circleMarker(
+                [-22.7067, -46.7743],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_0733bbd97e474e65abc578796ef712dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76a81318643e8f8f0fd958855ef53801 = $(`<div id="html_76a81318643e8f8f0fd958855ef53801" style="width: 100.0%; height: 100.0%;">Cidade Destino: Amparo, Distância: 103 km</div>`)[0];
+            popup_0733bbd97e474e65abc578796ef712dd.setContent(html_76a81318643e8f8f0fd958855ef53801);
+        
+
+        circle_marker_a982a5466e3d182968ded82a51c743e2.bindPopup(popup_0733bbd97e474e65abc578796ef712dd)
+        ;
+
+        
+    
+    
+            var circle_marker_1ced29bd96796f69d59edd6761c66756 = L.circleMarker(
+                [-22.7067, -46.7743],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_780fc7c76bff88b2d885921e9ac8b7d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbe4f2881d8cf9d95521ac77a8fc3f57 = $(`<div id="html_dbe4f2881d8cf9d95521ac77a8fc3f57" style="width: 100.0%; height: 100.0%;">Cidade Origem: Stockbridge, Distância: 10838 km</div>`)[0];
+            popup_780fc7c76bff88b2d885921e9ac8b7d2.setContent(html_dbe4f2881d8cf9d95521ac77a8fc3f57);
+        
+
+        circle_marker_1ced29bd96796f69d59edd6761c66756.bindPopup(popup_780fc7c76bff88b2d885921e9ac8b7d2)
+        ;
+
+        
+    
+    
+            var circle_marker_5eb47f1e62c3f129fb80682c2f06388d = L.circleMarker(
+                [47.6034, -122.3414],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_3dc9e37faa2307846774c900c19a5a92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0174bb42b62c07b5e34265a25abb6e2a = $(`<div id="html_0174bb42b62c07b5e34265a25abb6e2a" style="width: 100.0%; height: 100.0%;">Cidade Destino: Stockbridge, Distância: 10838 km</div>`)[0];
+            popup_3dc9e37faa2307846774c900c19a5a92.setContent(html_0174bb42b62c07b5e34265a25abb6e2a);
+        
+
+        circle_marker_5eb47f1e62c3f129fb80682c2f06388d.bindPopup(popup_3dc9e37faa2307846774c900c19a5a92)
+        ;
+
+        
+    
+    
+            var circle_marker_a6b6de6157d355569719ea5f10a75bc0 = L.circleMarker(
+                [47.6034, -122.3414],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_3418c02cc9b0fa0a3d60c2786ada4fea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_962dbcf1d39a1de3fe71ed64046ecfd2 = $(`<div id="html_962dbcf1d39a1de3fe71ed64046ecfd2" style="width: 100.0%; height: 100.0%;">Cidade Origem: Rio de Janeiro, Distância: 11092 km</div>`)[0];
+            popup_3418c02cc9b0fa0a3d60c2786ada4fea.setContent(html_962dbcf1d39a1de3fe71ed64046ecfd2);
+        
+
+        circle_marker_a6b6de6157d355569719ea5f10a75bc0.bindPopup(popup_3418c02cc9b0fa0a3d60c2786ada4fea)
+        ;
+
+        
+    
+    
+            var circle_marker_7946caada26e738931ea8c10cbf02374 = L.circleMarker(
+                [-22.9485, -43.3436],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28, "stroke": true, "weight": 3}
+            ).addTo(feature_group_1b2777bed40881f1c534f7206bfe126f);
+        
+    
+        var popup_e6e1d48e72881ba2ceda79348e2c74a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd0d25facdcb6c29a09a551c3d459218 = $(`<div id="html_bd0d25facdcb6c29a09a551c3d459218" style="width: 100.0%; height: 100.0%;">Cidade Destino: Rio de Janeiro, Distância: 11092 km</div>`)[0];
+            popup_e6e1d48e72881ba2ceda79348e2c74a1.setContent(html_bd0d25facdcb6c29a09a551c3d459218);
+        
+
+        circle_marker_7946caada26e738931ea8c10cbf02374.bindPopup(popup_e6e1d48e72881ba2ceda79348e2c74a1)
+        ;
+
+        
+    
+    
+            L.Control.TimeDimensionCustom = L.Control.TimeDimension.extend({
+                _getDisplayDateFormat: function(date){
+                    var newdate = new moment(date);
+                    console.log(newdate)
+                    return newdate.format("YYYY-MM-DD HH:mm:ss");
+                }
+            });
+            map_d7e95c67f1e5e7b64355cb2e9f1e9a86.timeDimension = L.timeDimension(
+                {
+                    period: "PT1H",
+                }
+            );
+            var timeDimensionControl = new L.Control.TimeDimensionCustom(
+                {"autoPlay": true, "loopButton": true, "maxSpeed": 50000, "minSpeed": 20000, "playerOptions": {"loop": true, "startOver": true, "transitionTime": 200}, "position": "bottomleft", "timeSliderDragUpdate": false}
+            );
+            map_d7e95c67f1e5e7b64355cb2e9f1e9a86.addControl(this.timeDimensionControl);
+
+            var geoJsonLayer = L.geoJson({"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-43.3436, -22.9485], [-46.6409, -23.6283]]}, "properties": {"title": "De Rio de Janeiro para S\u00e3o Paulo", "description": "Cidade destino: S\u00e3o Paulo, Dist\u00e2ncia: 345 km", "times": ["2022-08-24 10:19:23.015000+00:00", "2022-08-24 10:19:23.015000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-46.6409, -23.6283], [-43.3436, -22.9485]]}, "properties": {"title": "De S\u00e3o Paulo para Rio de Janeiro", "description": "Cidade destino: Rio de Janeiro, Dist\u00e2ncia: 345 km", "times": ["2022-08-25 10:44:59.227000+00:00", "2022-08-25 10:44:59.227000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-43.3436, -22.9485], [-46.6409, -23.6283]]}, "properties": {"title": "De Rio de Janeiro para S\u00e3o Paulo", "description": "Cidade destino: S\u00e3o Paulo, Dist\u00e2ncia: 345 km", "times": ["2022-09-21 15:22:01.014000+00:00", "2022-09-21 15:22:01.014000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-46.6409, -23.6283], [-43.3436, -22.9485]]}, "properties": {"title": "De S\u00e3o Paulo para Rio de Janeiro", "description": "Cidade destino: Rio de Janeiro, Dist\u00e2ncia: 345 km", "times": ["2022-09-23 14:17:40.654000+00:00", "2022-09-23 14:17:40.654000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-43.3436, -22.9485], [9.1922, 45.4722]]}, "properties": {"title": "De Rio de Janeiro para Mil\u00e3o", "description": "Cidade destino: Mil\u00e3o, Dist\u00e2ncia: 9274 km", "times": ["2022-10-25 09:32:27.889000+00:00", "2022-10-25 09:32:27.889000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[9.1922, 45.4722], [-46.6409, -23.6283]]}, "properties": {"title": "De Mil\u00e3o para S\u00e3o Paulo", "description": "Cidade destino: S\u00e3o Paulo, Dist\u00e2ncia: 9528 km", "times": ["2022-10-27 08:19:38.561000+00:00", "2022-10-27 08:19:38.561000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-46.6409, -23.6283], [9.1922, 45.4722]]}, "properties": {"title": "De S\u00e3o Paulo para Mil\u00e3o", "description": "Cidade destino: Mil\u00e3o, Dist\u00e2ncia: 9528 km", "times": ["2022-10-27 15:11:26.447000+00:00", "2022-10-27 15:11:26.447000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[9.1922, 45.4722], [-46.6409, -23.6283]]}, "properties": {"title": "De Mil\u00e3o para S\u00e3o Paulo", "description": "Cidade destino: S\u00e3o Paulo, Dist\u00e2ncia: 9528 km", "times": ["2022-10-28 13:01:03.641000+00:00", "2022-10-28 13:01:03.641000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-46.6409, -23.6283], [9.1922, 45.4722]]}, "properties": {"title": "De S\u00e3o Paulo para Mil\u00e3o", "description": "Cidade destino: Mil\u00e3o, Dist\u00e2ncia: 9528 km", "times": ["2022-10-28 18:53:45.406000+00:00", "2022-10-28 18:53:45.406000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[9.1922, 45.4722], [-36.3859, -9.4488]]}, "properties": {"title": "De Mil\u00e3o para Mar Vermelho", "description": "Cidade destino: Mar Vermelho, Dist\u00e2ncia: 7612 km", "times": ["2022-10-29 08:26:38.926000+00:00", "2022-10-29 08:26:38.926000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-36.3859, -9.4488], [-46.6409, -23.6283]]}, "properties": {"title": "De Mar Vermelho para S\u00e3o Paulo", "description": "Cidade destino: S\u00e3o Paulo, Dist\u00e2ncia: 1916 km", "times": ["2022-10-29 08:31:53.193000+00:00", "2022-10-29 08:31:53.193000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-46.6409, -23.6283], [12.2213, 46.1394]]}, "properties": {"title": "De S\u00e3o Paulo para Belluno", "description": "Cidade destino: Belluno, Dist\u00e2ncia: 9757 km", "times": ["2022-10-29 15:44:07.650000+00:00", "2022-10-29 15:44:07.650000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[12.2213, 46.1394], [-51.2658, -30.1169]]}, "properties": {"title": "De Belluno para Porto Alegre", "description": "Cidade destino: Porto Alegre, Dist\u00e2ncia: 10608 km", "times": ["2022-10-29 17:15:56.355000+00:00", "2022-10-29 17:15:56.355000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-51.2658, -30.1169], [12.2213, 46.1394]]}, "properties": {"title": "De Porto Alegre para Belluno", "description": "Cidade destino: Belluno, Dist\u00e2ncia: 10608 km", "times": ["2022-10-30 06:07:33.996000+00:00", "2022-10-30 06:07:33.996000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[12.2213, 46.1394], [-46.6409, -23.6283]]}, "properties": {"title": "De Belluno para S\u00e3o Paulo", "description": "Cidade destino: S\u00e3o Paulo, Dist\u00e2ncia: 9757 km", "times": ["2022-11-05 08:12:20.047000+00:00", "2022-11-05 08:12:20.047000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-46.6409, -23.6283], [-43.3436, -22.9485]]}, "properties": {"title": "De S\u00e3o Paulo para Rio de Janeiro", "description": "Cidade destino: Rio de Janeiro, Dist\u00e2ncia: 345 km", "times": ["2022-11-06 21:55:54.263000+00:00", "2022-11-06 21:55:54.263000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-43.3436, -22.9485], [-46.6409, -23.6283]]}, "properties": {"title": "De Rio de Janeiro para S\u00e3o Paulo", "description": "Cidade destino: S\u00e3o Paulo, Dist\u00e2ncia: 345 km", "times": ["2022-11-09 12:42:36.405000+00:00", "2022-11-09 12:42:36.405000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-46.6409, -23.6283], [23.7353, 37.9842]]}, "properties": {"title": "De S\u00e3o Paulo para Atenas", "description": "Cidade destino: Atenas, Dist\u00e2ncia: 10034 km", "times": ["2022-11-10 16:28:58.730000+00:00", "2022-11-10 16:28:58.730000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[23.7353, 37.9842], [-57.6794, -16.0696]]}, "properties": {"title": "De Atenas para Caceres", "description": "Cidade destino: Caceres, Dist\u00e2ncia: 10372 km", "times": ["2022-11-11 15:33:07.063000+00:00", "2022-11-11 15:33:07.063000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-57.6794, -16.0696], [23.7353, 37.9842]]}, "properties": {"title": "De Caceres para Atenas", "description": "Cidade destino: Atenas, Dist\u00e2ncia: 10372 km", "times": ["2022-11-11 17:24:55.455000+00:00", "2022-11-11 17:24:55.455000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[23.7353, 37.9842], [23.7167, 37.9667]]}, "properties": {"title": "De Atenas para Ne\u00e1poli Sp\u00e1ton", "description": "Cidade destino: Ne\u00e1poli Sp\u00e1ton, Dist\u00e2ncia: 2 km", "times": ["2022-11-12 11:51:30.574000+00:00", "2022-11-12 11:51:30.574000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[23.7167, 37.9667], [-46.6409, -23.6283]]}, "properties": {"title": "De Ne\u00e1poli Sp\u00e1ton para S\u00e3o Paulo", "description": "Cidade destino: S\u00e3o Paulo, Dist\u00e2ncia: 10031 km", "times": ["2022-11-12 20:44:54.325000+00:00", "2022-11-12 20:44:54.325000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-46.6409, -23.6283], [-43.3436, -22.9485]]}, "properties": {"title": "De S\u00e3o Paulo para Rio de Janeiro", "description": "Cidade destino: Rio de Janeiro, Dist\u00e2ncia: 345 km", "times": ["2022-11-14 07:49:32.338000+00:00", "2022-11-14 07:49:32.338000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-43.3436, -22.9485], [-46.6409, -23.6283]]}, "properties": {"title": "De Rio de Janeiro para S\u00e3o Paulo", "description": "Cidade destino: S\u00e3o Paulo, Dist\u00e2ncia: 345 km", "times": ["2022-11-22 18:36:48.131000+00:00", "2022-11-22 18:36:48.131000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-46.6409, -23.6283], [-43.2192, -22.8305]]}, "properties": {"title": "De S\u00e3o Paulo para Bel\u00e9m", "description": "Cidade destino: Bel\u00e9m, Dist\u00e2ncia: 360 km", "times": ["2022-11-23 22:57:08.007000+00:00", "2022-11-23 22:57:08.007000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-43.2192, -22.8305], [-43.3436, -22.9485]]}, "properties": {"title": "De Bel\u00e9m para Rio de Janeiro", "description": "Cidade destino: Rio de Janeiro, Dist\u00e2ncia: 18 km", "times": ["2022-11-25 10:45:46.782000+00:00", "2022-11-25 10:45:46.782000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-43.3436, -22.9485], [-51.2005, -30.0269]]}, "properties": {"title": "De Rio de Janeiro para Porto Alegre", "description": "Cidade destino: Porto Alegre, Dist\u00e2ncia: 1108 km", "times": ["2022-12-24 13:25:50.837000+00:00", "2022-12-24 13:25:50.837000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-51.2005, -30.0269], [-97.822, 37.751]]}, "properties": {"title": "De Porto Alegre para Iron Mountain", "description": "Cidade destino: Iron Mountain, Dist\u00e2ncia: 8959 km", "times": ["2022-12-25 01:28:33.339000+00:00", "2022-12-25 01:28:33.339000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-97.822, 37.751], [-81.4396, 28.5788]]}, "properties": {"title": "De Iron Mountain para Orlando", "description": "Cidade destino: Orlando, Dist\u00e2ncia: 1830 km", "times": ["2022-12-25 18:54:13.844000+00:00", "2022-12-25 18:54:13.844000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-81.4396, 28.5788], [-97.822, 37.751]]}, "properties": {"title": "De Orlando para Iron Mountain", "description": "Cidade destino: Iron Mountain, Dist\u00e2ncia: 1830 km", "times": ["2022-12-27 11:58:21.922000+00:00", "2022-12-27 11:58:21.922000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-97.822, 37.751], [-81.6221, 28.6344]]}, "properties": {"title": "De Iron Mountain para San Francisco", "description": "Cidade destino: San Francisco, Dist\u00e2ncia: 1812 km", "times": ["2022-12-28 18:38:21.137000+00:00", "2022-12-28 18:38:21.137000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-81.6221, 28.6344], [-97.822, 37.751]]}, "properties": {"title": "De San Francisco para Iron Mountain", "description": "Cidade destino: Iron Mountain, Dist\u00e2ncia: 1812 km", "times": ["2022-12-28 20:56:35.237000+00:00", "2022-12-28 20:56:35.237000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-97.822, 37.751], [-46.6409, -23.6283]]}, "properties": {"title": "De Iron Mountain para S\u00e3o Paulo", "description": "Cidade destino: S\u00e3o Paulo, Dist\u00e2ncia: 8668 km", "times": ["2022-12-28 22:51:44.955000+00:00", "2022-12-28 22:51:44.955000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-46.6409, -23.6283], [-97.822, 37.751]]}, "properties": {"title": "De S\u00e3o Paulo para Iron Mountain", "description": "Cidade destino: Iron Mountain, Dist\u00e2ncia: 8668 km", "times": ["2022-12-29 08:26:28.858000+00:00", "2022-12-29 08:26:28.858000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-97.822, 37.751], [-46.6409, -23.6283]]}, "properties": {"title": "De Iron Mountain para S\u00e3o Paulo", "description": "Cidade destino: S\u00e3o Paulo, Dist\u00e2ncia: 8668 km", "times": ["2022-12-30 21:03:53.546000+00:00", "2022-12-30 21:03:53.546000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-46.6409, -23.6283], [-97.822, 37.751]]}, "properties": {"title": "De S\u00e3o Paulo para Iron Mountain", "description": "Cidade destino: Iron Mountain, Dist\u00e2ncia: 8668 km", "times": ["2022-12-31 10:04:00.307000+00:00", "2022-12-31 10:04:00.307000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-97.822, 37.751], [-46.6409, -23.6283]]}, "properties": {"title": "De Iron Mountain para S\u00e3o Paulo", "description": "Cidade destino: S\u00e3o Paulo, Dist\u00e2ncia: 8668 km", "times": ["2023-01-01 19:01:34.816000+00:00", "2023-01-01 19:01:34.816000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-46.6409, -23.6283], [-97.822, 37.751]]}, "properties": {"title": "De S\u00e3o Paulo para Iron Mountain", "description": "Cidade destino: Iron Mountain, Dist\u00e2ncia: 8668 km", "times": ["2023-01-02 05:42:19.462000+00:00", "2023-01-02 05:42:19.462000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-97.822, 37.751], [-81.2878, 28.4932]]}, "properties": {"title": "De Iron Mountain para Orlando", "description": "Cidade destino: Orlando, Dist\u00e2ncia: 1847 km", "times": ["2023-01-02 19:41:44.354000+00:00", "2023-01-02 19:41:44.354000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-81.2878, 28.4932], [-73.9858, 40.738]]}, "properties": {"title": "De Orlando para Nova Iorque", "description": "Cidade destino: Nova Iorque, Dist\u00e2ncia: 1515 km", "times": ["2023-01-03 10:45:20.683000+00:00", "2023-01-03 10:45:20.683000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-73.9858, 40.738], [-74.5027, 40.3015]]}, "properties": {"title": "De Nova Iorque para Cranbury", "description": "Cidade destino: Cranbury, Dist\u00e2ncia: 65 km", "times": ["2023-01-04 18:52:21.474000+00:00", "2023-01-04 18:52:21.474000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-74.5027, 40.3015], [-73.9858, 40.738]]}, "properties": {"title": "De Cranbury para Nova Iorque", "description": "Cidade destino: Nova Iorque, Dist\u00e2ncia: 65 km", "times": ["2023-01-05 03:53:40.034000+00:00", "2023-01-05 03:53:40.034000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-74.0, 40.7157], [-51.1744, -29.9228]]}, "properties": {"title": "De Nova Iorque para Canoas", "description": "Cidade destino: Canoas, Dist\u00e2ncia: 8198 km", "times": ["2023-01-06 01:40:10.237000+00:00", "2023-01-06 01:40:10.237000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-51.1744, -29.9228], [-73.9858, 40.738]]}, "properties": {"title": "De Canoas para Nova Iorque", "description": "Cidade destino: Nova Iorque, Dist\u00e2ncia: 8200 km", "times": ["2023-01-06 06:10:05.289000+00:00", "2023-01-06 06:10:05.289000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-73.9858, 40.738], [-43.3436, -22.9485]]}, "properties": {"title": "De Nova Iorque para Rio de Janeiro", "description": "Cidade destino: Rio de Janeiro, Dist\u00e2ncia: 7757 km", "times": ["2023-01-09 13:26:53.963000+00:00", "2023-01-09 13:26:53.963000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-43.3436, -22.9485], [-46.6409, -23.6283]]}, "properties": {"title": "De Rio de Janeiro para S\u00e3o Paulo", "description": "Cidade destino: S\u00e3o Paulo, Dist\u00e2ncia: 345 km", "times": ["2023-02-09 15:02:14.528000+00:00", "2023-02-09 15:02:14.528000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-46.6409, -23.6283], [-46.7743, -22.7067]]}, "properties": {"title": "De S\u00e3o Paulo para Amparo", "description": "Cidade destino: Amparo, Dist\u00e2ncia: 103 km", "times": ["2023-02-10 12:19:39.306000+00:00", "2023-02-10 12:19:39.306000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-46.7743, -22.7067], [-122.3414, 47.6034]]}, "properties": {"title": "De Amparo para Stockbridge", "description": "Cidade destino: Stockbridge, Dist\u00e2ncia: 10838 km", "times": ["2023-02-10 16:59:27.081000+00:00", "2023-02-10 16:59:27.081000+00:00"]}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-122.3414, 47.6034], [-43.3436, -22.9485]]}, "properties": {"title": "De Stockbridge para Rio de Janeiro", "description": "Cidade destino: Rio de Janeiro, Dist\u00e2ncia: 11092 km", "times": ["2023-02-10 20:09:18.398000+00:00", "2023-02-10 20:09:18.398000+00:00"]}}]}, {
+                    pointToLayer: function (feature, latLng) {
+                        if (feature.properties.icon == 'marker') {
+                            if(feature.properties.iconstyle){
+                                return new L.Marker(latLng, {
+                                    icon: L.icon(feature.properties.iconstyle)});
+                            }
+                            //else
+                            return new L.Marker(latLng);
+                        }
+                        if (feature.properties.icon == 'circle') {
+                            if (feature.properties.iconstyle) {
+                                return new L.circleMarker(latLng, feature.properties.iconstyle)
+                                };
+                            //else
+                            return new L.circleMarker(latLng);
+                        }
+                        //else
+
+                        return new L.Marker(latLng);
+                    },
+                    style: function (feature) {
+                        return feature.properties.style;
+                    },
+                    onEachFeature: function(feature, layer) {
+                        if (feature.properties.popup) {
+                        layer.bindPopup(feature.properties.popup);
+                        }
+                    }
+                })
+
+            var timestamped_geo_json_596c56d312652eeb659e2c82097f39ff = L.timeDimension.layer.geoJson(
+                geoJsonLayer,
+                {
+                    updateTimeDimension: true,
+                    addlastPoint: true,
+                    duration: undefined,
+                }
+            ).addTo(map_d7e95c67f1e5e7b64355cb2e9f1e9a86);
+        
+    
+            var layer_control_7047f236f24f4d2b1315e0657ac2d25d = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_a311fec2eb712f7d0ba0eb30f0e61ce3,
+                },
+                overlays :  {
+                    "Linhas Tracejadas" : feature_group_2d383c03d5e73ed7728cc40a58585c2b,
+                    "Cidade Destino" : feature_group_1b2777bed40881f1c534f7206bfe126f,
+                },
+            };
+            L.control.layers(
+                layer_control_7047f236f24f4d2b1315e0657ac2d25d.base_layers,
+                layer_control_7047f236f24f4d2b1315e0657ac2d25d.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_d7e95c67f1e5e7b64355cb2e9f1e9a86);
+        
+</script>
+</html>
